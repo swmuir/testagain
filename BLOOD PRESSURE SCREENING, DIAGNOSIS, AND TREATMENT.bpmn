@@ -1,0 +1,2068 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<semantic:definitions xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:trisobpmn="http://www.trisotech.com/2014/triso/bpmn" xmlns:triso="http://www.trisotech.com/2015/triso/modeling" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:trisofeed="http://trisotech.com/feed" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:rss="http://purl.org/rss/2.0/" xmlns:drools="http://www.jboss.org/drools"                 xmlns="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74" id="_28c8ed1b-6202-4343-8376-f08f5b1e1d74" targetNamespace="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" exporter="Workflow Modeler" exporterVersion="6.12.1" name="BLOOD PRESSURE SCREENING, DIAGNOSIS, AND TREATMENT" trisobpmn:logoChoice="Default">
+    <semantic:itemDefinition structureRef="feel:string" isCollection="false" triso:basicType="true" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="triso_string" id="_triso-default-bpmnItemDefinition-string_id"/>
+    <semantic:itemDefinition structureRef="tVitalSignsMeasurements" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" id="_b9966f19-058b-4e89-822e-b6434729ece0"/>
+    <semantic:itemDefinition structureRef="tPatientData" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" id="_a02b603e-ac09-4809-b9ec-3f4b478f11ac"/>
+    <semantic:itemDefinition structureRef="tDemographics" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tDemographics" id="_0343b631-a79f-45f8-abbc-62bd9f66926f"/>
+    <semantic:itemDefinition structureRef="tBloodPressureStage" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Blood Pressure Rating" id="_24976c46-22b3-416b-bb03-04a94c48f04d"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tBloodPressureRating" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tBloodPressureRating" id="_1e2bd75f-6b0e-49d1-ac65-4d44bc94efdf"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tVitalSignsMeasurments" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tVitalSignsMeasurments" id="_724d47cb-dfbe-44c1-ab68-b5082dc5ee80"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tBloodPressure" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tBloodPressure" id="_08086131-4cbb-447e-a067-cb909a3e0203"/>
+    <semantic:itemDefinition structureRef="tHypertensionResult" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tHypertensionResult" id="_af774b11-a7e1-4c94-86ed-7f54b5e38805"/>
+    <semantic:itemDefinition structureRef="tCompellingIndicationsResult" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tCompellingIndicationsResult" id="_6217ae1a-7e11-44fa-b94d-255146b98767"/>
+    <semantic:itemDefinition structureRef="tBloodPressureGoalResult" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Blood Pressure Goal Result" id="_bbafbf38-dc43-49e2-a71b-66b0ce5b9f79"/>
+    <semantic:itemDefinition structureRef="tBloodPressureGoals" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tBloodPressureGoals" id="_def27c9d-e70a-498f-aaf3-fecc5d0a47aa"/>
+    <semantic:itemDefinition structureRef="tBlood_Pressure" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tBlood_Pressure" id="_4ada72cc-72b3-428e-b0be-7b3034981b15"/>
+    <semantic:itemDefinition structureRef="tPreferences" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tPreferences" id="_ebf4bd5f-b4ce-4186-b813-d6c33f13587b"/>
+    <semantic:itemDefinition structureRef="tStage1DrugChoice" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition tStage1DrugChoice" id="_97dba0e0-0f6c-4c47-a959-8856e664e89e"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tPatientData" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tPatientData" id="_fb493c85-1405-48b6-911f-b73c1906cfd0"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tSex" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tSex" id="_5aa603b0-fa53-4139-b4b3-f40c83edbdeb"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tEthnicity" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tEthnicity" id="_923a8e38-aa21-40aa-9112-d69c41756ab6"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tDemographics" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tDemographics" id="_a3f1d767-75d6-4287-96f6-622a71a0864e"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tBloodPressureStage" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tBloodPressureStage" id="_20bdb1ac-df5a-4c49-8c54-7a71278165bf"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tHealthConditions" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tHealthConditions" id="_47a90bb1-a258-4799-85da-3d6d6f9c22db"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tMedicationTolerances" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tMedicationTolerances" id="_5668a6e2-8ac5-418d-9cc8-f92a37c26763"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tPrescriptions" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tPrescriptions" id="_6deda018-2532-4634-a605-8192fad07643"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tBlood_Pressure" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tBlood_Pressure" id="_65c59c9b-f83d-4434-ba61-b99ef0aca8fc"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tVitalSignsMeasurements" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tVitalSignsMeasurements" id="_0071bc53-1fdd-4213-ab11-b505539641ba"/>
+    <semantic:itemDefinition structureRef="Hypertension_Decisions.tPreferences" isCollection="false" triso:basicType="false" triso:definitionType="http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType" triso:name="Item Definition Hypertension_Decisions.tPreferences" id="_738d8313-3d6c-4875-8f7d-8dc442effe16"/>
+    <semantic:process id="_7d9d877b-6672-4ab4-a7cd-8f2b3d52bb82" name="Blood Pressure Screening, Diagnosis, and Treatment" isClosed="false">
+        <semantic:ioSpecification>
+            <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_1732bc38-6a4b-4c23-a6dd-c20f0d87f4ab"/>
+            <semantic:inputSet id="_c2e584e2-3526-4306-a6a4-139e54f85e98">
+                <semantic:dataInputRefs>_1732bc38-6a4b-4c23-a6dd-c20f0d87f4ab</semantic:dataInputRefs>
+            </semantic:inputSet>
+            <semantic:outputSet/>
+        </semantic:ioSpecification>
+        <semantic:startEvent id="_397e3ad9-d2d7-4899-b5b2-a9ebf0375130">
+            <semantic:outgoing>_1ecdf0f3-0d4e-4f6a-b422-781bbfd16242</semantic:outgoing>
+        </semantic:startEvent>
+        <semantic:businessRuleTask id="_4c95c004-c667-44df-ad55-1717fb720286" name="Does the Patient have Hypertension?" implementation="##unspecified">
+            <semantic:extensionElements>
+                <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_97c1e68a-8eb2-445f-83e9-88c4aba7ef8d" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_97c1e68a-8eb2-445f-83e9-88c4aba7ef8d" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+            </semantic:extensionElements>
+            <semantic:incoming>_31566b13-36e9-481d-8116-caceda99f291</semantic:incoming>
+            <semantic:outgoing>_246896fb-5c29-4bc9-b934-c8b758e8dd3f</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Fixed input" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_6407cb83-c274-4281-a2a9-ab701e18c25a"/>
+                <semantic:dataOutput name="Fixed output" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_2ab15e63-4e03-4d89-9229-224563362748"/>
+                <semantic:inputSet id="_431048c0-e134-437c-b025-46221e4cc66b">
+                    <semantic:dataInputRefs>_6407cb83-c274-4281-a2a9-ab701e18c25a</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_a8d9fb77-b052-4ad7-bc12-01977bb46ea1">
+                    <semantic:dataOutputRefs>_2ab15e63-4e03-4d89-9229-224563362748</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_526bdea1-d9ea-4696-a212-1c20c4e3160d">
+                <semantic:sourceRef>_4bcad433-5cc2-436e-baaf-554e60ca03d2</semantic:sourceRef>
+                <semantic:targetRef>_6407cb83-c274-4281-a2a9-ab701e18c25a</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_c5f553db-7f44-4f53-a827-18e220411c87">
+                <semantic:sourceRef>_2ab15e63-4e03-4d89-9229-224563362748</semantic:sourceRef>
+                <semantic:targetRef>_36629777-2440-4b08-b7ff-b653ca3c2337</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:businessRuleTask>
+        <semantic:exclusiveGateway id="_e7612795-59e5-4339-8608-d0e5e5d86efc" name="Does the Patient have Hypertension?" gatewayDirection="Diverging" default="_82e09496-a551-4426-acbb-2970cd1b4125">
+            <semantic:incoming>_5e6eb8f8-b8c1-4df6-9eb8-928b2d14b50c</semantic:incoming>
+            <semantic:outgoing>_82e09496-a551-4426-acbb-2970cd1b4125</semantic:outgoing>
+            <semantic:outgoing>_ee50e693-d0c8-4d23-8e9f-944cfffda7ec</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:endEvent id="_66d4f1ef-b2ec-4acd-bbe6-b6b99ca7a29d">
+            <semantic:incoming>_82e09496-a551-4426-acbb-2970cd1b4125</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:subProcess id="_c353b44d-750a-41c3-9850-f122771c1f57" name="Perform Lifestyle Changes" triggeredByEvent="false">
+            <semantic:incoming>_ee50e693-d0c8-4d23-8e9f-944cfffda7ec</semantic:incoming>
+            <semantic:outgoing>_7baeaab3-6eb9-4d72-a773-53daea9fab5b</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Lifestyle Guidelines" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" id="_6316e7e8-5051-4dab-b631-7e81c8ded1e6"/>
+                <semantic:inputSet id="_a74d6a4c-936f-444e-ab6c-36dbf113953f">
+                    <semantic:dataInputRefs>_6316e7e8-5051-4dab-b631-7e81c8ded1e6</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet/>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_d57e98d6-d471-4bb4-91f7-498a1015aabf">
+                <semantic:sourceRef>_1de95173-6ca9-4463-8663-5f2aefbeaeb3</semantic:sourceRef>
+                <semantic:targetRef>_6316e7e8-5051-4dab-b631-7e81c8ded1e6</semantic:targetRef>
+            </semantic:dataInputAssociation>
+        </semantic:subProcess>
+        <semantic:intermediateCatchEvent id="_25cda44b-7d0a-41af-a35e-0124be0e3177" name="1 Month">
+            <semantic:incoming>_7baeaab3-6eb9-4d72-a773-53daea9fab5b</semantic:incoming>
+            <semantic:outgoing>_c5fdadce-fbed-42fe-9d37-fa9ae8247c4e</semantic:outgoing>
+            <semantic:timerEventDefinition id="_398762b2-7edf-420b-aa21-0783292f3ce1"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:userTask id="_ea1c9cd4-bf32-434f-bd58-b85e26eb7f92" name="Gather Blood Pressure" implementation="##unspecified">
+            <semantic:incoming>_c5fdadce-fbed-42fe-9d37-fa9ae8247c4e</semantic:incoming>
+            <semantic:outgoing>_1ebab3c0-6eec-4536-9646-2dbaf253bd91</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_0a5139c8-043b-480f-96fc-5980ac1336b3"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_bccb2271-a272-41c5-afac-24a6a7de18ac"/>
+                <semantic:inputSet id="_2288494f-77de-486b-a5ef-d89abdb63062">
+                    <semantic:dataInputRefs>_0a5139c8-043b-480f-96fc-5980ac1336b3</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_2c484b83-574f-41de-ada1-9aaacad4a56b">
+                    <semantic:dataOutputRefs>_bccb2271-a272-41c5-afac-24a6a7de18ac</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_8a1cb100-978a-4842-a878-913f96610e79">
+                <semantic:sourceRef>_fa30f0a8-f51b-4744-97cc-52f8071d6fff</semantic:sourceRef>
+                <semantic:targetRef>_0a5139c8-043b-480f-96fc-5980ac1336b3</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_88b3d182-deb4-4e38-9d1d-c6ae51da44ee">
+                <semantic:sourceRef>_bccb2271-a272-41c5-afac-24a6a7de18ac</semantic:sourceRef>
+                <semantic:targetRef>_c8d11b55-efd5-4d31-bc32-a5b242109497</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:businessRuleTask id="_a1774f76-2f8c-443f-9034-f976ed5a7bfe" name="Has Blood Pressure Goal been met?" implementation="##unspecified">
+            <semantic:extensionElements>
+                <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_10dd8750-f15e-43ad-bbd1-1462f14042a0" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_10dd8750-f15e-43ad-bbd1-1462f14042a0" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+            </semantic:extensionElements>
+            <semantic:incoming>_aa635711-95ca-463c-9e8c-4b6e147758a8</semantic:incoming>
+            <semantic:outgoing>_47c03254-10ad-42a2-9256-df1d89a7ac16</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Fixed input" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_25f46d3b-f6de-47d0-bd75-0d736d12fbd9"/>
+                <semantic:dataOutput name="Fixed output" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_8f9554bb-b072-4ee9-8c9c-425f6527d77b"/>
+                <semantic:inputSet id="_c2afa761-c010-4e7d-a200-e74b0f139f38">
+                    <semantic:dataInputRefs>_25f46d3b-f6de-47d0-bd75-0d736d12fbd9</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_e87e3365-5a16-47bc-a5e7-3d57dac33821">
+                    <semantic:dataOutputRefs>_8f9554bb-b072-4ee9-8c9c-425f6527d77b</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_7e964f30-b4eb-496c-a87f-1a068889288b">
+                <semantic:sourceRef>_e326f7db-41f8-4ad3-9542-b00152f378cc</semantic:sourceRef>
+                <semantic:targetRef>_25f46d3b-f6de-47d0-bd75-0d736d12fbd9</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataInputAssociation id="_529e4842-e708-49a2-af7c-51da5dda0d0b">
+                <semantic:sourceRef>_9cf2626d-9fca-4605-bee1-33b049e80ef1</semantic:sourceRef>
+                <semantic:targetRef>_25f46d3b-f6de-47d0-bd75-0d736d12fbd9</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_cabbf17b-77f1-46da-9222-47ba2363231c">
+                <semantic:sourceRef>_8f9554bb-b072-4ee9-8c9c-425f6527d77b</semantic:sourceRef>
+                <semantic:targetRef>_41d7ccec-f17a-4fc7-ba12-9f1af20d3991</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:businessRuleTask>
+        <semantic:dataObject id="_38c5ec02-e5d6-4310-add6-8ceb1e04d252" name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false"/>
+        <semantic:dataObject id="_763682a0-2361-4ccc-bcf4-e75c7492bc68" name="Blood Pressure Goals" itemSubjectRef="_def27c9d-e70a-498f-aaf3-fecc5d0a47aa" isCollection="false"/>
+        <semantic:exclusiveGateway id="_8f6036a4-d9cd-4527-9315-35ec579b9ac4" name="Has Blood Pressure Goal been met?" gatewayDirection="Diverging" default="_a53ac577-744a-4524-81a1-1836a1c9c452">
+            <semantic:incoming>_a3613ae7-c34c-42ac-b644-067e531b9ecb</semantic:incoming>
+            <semantic:outgoing>_bd10d419-43e8-4d40-b595-f669c3cda795</semantic:outgoing>
+            <semantic:outgoing>_a53ac577-744a-4524-81a1-1836a1c9c452</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:endEvent id="_f70fd186-4f13-4a69-ba4d-4ccc5c8c0f15">
+            <semantic:incoming>_bd10d419-43e8-4d40-b595-f669c3cda795</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:dataObject id="_2915fe7b-2452-458b-a6a6-691469c43bc7" name="Lifestyle Guidelines" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false"/>
+        <semantic:dataObject id="_54b744e4-bfd3-4b1e-982c-c45567234212" name="Blood Pressure Stage" itemSubjectRef="_24976c46-22b3-416b-bb03-04a94c48f04d" isCollection="false">
+            <semantic:extensionElements>
+                <triso:semanticLink id="_db210b43-3c38-4ea3-8b85-a2ae8dfba365" name="Hypertension Decisions - Blood Pressure Rating" modelURI="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_439e31fa-49cc-41b4-bf8b-592a3cbdf43b"/>
+            </semantic:extensionElements>
+        </semantic:dataObject>
+        <semantic:serviceTask id="_51f19207-8c44-4dba-a4f6-822d6161e964" name="Get Most Recent Blood Pressure Reading" implementation="##WebService">
+            <semantic:incoming>_1ecdf0f3-0d4e-4f6a-b422-781bbfd16242</semantic:incoming>
+            <semantic:outgoing>_31566b13-36e9-481d-8116-caceda99f291</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_ef723ad6-f689-4e6b-857d-4c29bb344aa3"/>
+                <semantic:dataOutput name="Vital Signs and Measurements" itemSubjectRef="_b9966f19-058b-4e89-822e-b6434729ece0" isCollection="false" triso:hidden="false" id="_c48d7620-4932-4b98-b017-7409b04443d4"/>
+                <semantic:inputSet id="_eaf5bb9d-523e-4132-99f5-094aaf04159f">
+                    <semantic:dataInputRefs>_ef723ad6-f689-4e6b-857d-4c29bb344aa3</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_ae51be54-4986-4d21-8b5a-89ac0425c19e">
+                    <semantic:dataOutputRefs>_c48d7620-4932-4b98-b017-7409b04443d4</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_b9e73e28-02e1-4c00-88b6-ab2c10cec0fd">
+                <semantic:sourceRef>_1732bc38-6a4b-4c23-a6dd-c20f0d87f4ab</semantic:sourceRef>
+                <semantic:targetRef>_ef723ad6-f689-4e6b-857d-4c29bb344aa3</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_df6810f8-1bf5-48c1-969e-8fe435ecac09">
+                <semantic:sourceRef>_c48d7620-4932-4b98-b017-7409b04443d4</semantic:sourceRef>
+                <semantic:targetRef>_4bcad433-5cc2-436e-baaf-554e60ca03d2</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:serviceTask>
+        <semantic:serviceTask id="_d27b93f7-57dd-4c93-85e7-299ca0f0b13f" name="Get Most Recent Blood Pressure Reading" implementation="##WebService">
+            <semantic:incoming>_1ebab3c0-6eec-4536-9646-2dbaf253bd91</semantic:incoming>
+            <semantic:outgoing>_aa635711-95ca-463c-9e8c-4b6e147758a8</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_d34507cb-9f76-485a-8c73-f678c6ed5f4e"/>
+                <semantic:dataOutput name="Vital Signs and Measurements" itemSubjectRef="_b9966f19-058b-4e89-822e-b6434729ece0" isCollection="false" triso:hidden="false" id="_a6d20c40-2e7f-4cda-98ac-49defb61a200"/>
+                <semantic:inputSet id="_b3810e2c-ebfc-449b-ac0b-422702d89b4f">
+                    <semantic:dataInputRefs>_d34507cb-9f76-485a-8c73-f678c6ed5f4e</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_adb679ac-da40-4d18-9353-7a5215ed045f">
+                    <semantic:dataOutputRefs>_a6d20c40-2e7f-4cda-98ac-49defb61a200</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_d8ebae94-b358-4fe4-ac16-ace21872a050">
+                <semantic:sourceRef>_c8d11b55-efd5-4d31-bc32-a5b242109497</semantic:sourceRef>
+                <semantic:targetRef>_d34507cb-9f76-485a-8c73-f678c6ed5f4e</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_5f088276-19cd-46ad-8036-70f6ad43c0a1">
+                <semantic:sourceRef>_a6d20c40-2e7f-4cda-98ac-49defb61a200</semantic:sourceRef>
+                <semantic:targetRef>_9cf2626d-9fca-4605-bee1-33b049e80ef1</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:serviceTask>
+        <semantic:userTask id="_710e8d93-b7e5-4007-8514-72c1dbef505a" name="Update Patient Record" implementation="##unspecified">
+            <semantic:incoming>_246896fb-5c29-4bc9-b934-c8b758e8dd3f</semantic:incoming>
+            <semantic:outgoing>_5e6eb8f8-b8c1-4df6-9eb8-928b2d14b50c</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Hypertension Result" itemSubjectRef="_af774b11-a7e1-4c94-86ed-7f54b5e38805" isCollection="false" id="_189b1eec-8e02-4ee6-bf5e-dc815f4ad25f"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_baa4b93b-0530-48d6-88bc-02262f751758"/>
+                <semantic:inputSet id="_309aa340-60b4-4593-96db-3e2d219e28c4">
+                    <semantic:dataInputRefs>_189b1eec-8e02-4ee6-bf5e-dc815f4ad25f</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_321092c1-d621-4e5e-8ddd-ca40a669c90f">
+                    <semantic:dataOutputRefs>_baa4b93b-0530-48d6-88bc-02262f751758</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_dc7d9f99-82d9-46ea-b664-724196811c7d">
+                <semantic:sourceRef>_36629777-2440-4b08-b7ff-b653ca3c2337</semantic:sourceRef>
+                <semantic:targetRef>_189b1eec-8e02-4ee6-bf5e-dc815f4ad25f</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_5dcc74ac-422b-4043-b571-19b26edd2401">
+                <semantic:sourceRef>_baa4b93b-0530-48d6-88bc-02262f751758</semantic:sourceRef>
+                <semantic:targetRef>_7190bf1d-cd59-4196-843b-a2b5295c9aa7</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:userTask id="_2ac0487c-ea56-4254-b4f4-ae16bc320dad" name="Update Patient Record" implementation="##unspecified">
+            <semantic:incoming>_47c03254-10ad-42a2-9256-df1d89a7ac16</semantic:incoming>
+            <semantic:outgoing>_a3613ae7-c34c-42ac-b644-067e531b9ecb</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Blood Pressure Goal Result" itemSubjectRef="_bbafbf38-dc43-49e2-a71b-66b0ce5b9f79" isCollection="false" id="_e0a872d3-0d20-482a-8999-061341a9546a"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_315296cd-fdd2-4f42-aaa6-75dbe459c76a"/>
+                <semantic:inputSet id="_08153e33-832c-4b52-97b4-4aef67146aa2">
+                    <semantic:dataInputRefs>_e0a872d3-0d20-482a-8999-061341a9546a</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_90e47fd1-62fe-41eb-82b1-c73b5ace527e">
+                    <semantic:dataOutputRefs>_315296cd-fdd2-4f42-aaa6-75dbe459c76a</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_f4cdea6c-5708-49c8-9f04-6d0ac2f2304e">
+                <semantic:sourceRef>_41d7ccec-f17a-4fc7-ba12-9f1af20d3991</semantic:sourceRef>
+                <semantic:targetRef>_e0a872d3-0d20-482a-8999-061341a9546a</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_7b7bdb0c-e55b-41a1-b11e-9e5b2b66ec10">
+                <semantic:sourceRef>_315296cd-fdd2-4f42-aaa6-75dbe459c76a</semantic:sourceRef>
+                <semantic:targetRef>_669d1da9-a68a-42a1-a1a2-0c7b2c23576c</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:businessRuleTask id="_316eea29-edf3-461f-a9dd-859d2114ce46" name="Are there Compelling Indications?" implementation="##unspecified">
+            <semantic:extensionElements>
+                <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_f0ee2212-bd76-471a-9baf-d48ff767bb38" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_f0ee2212-bd76-471a-9baf-d48ff767bb38" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+            </semantic:extensionElements>
+            <semantic:incoming>_a53ac577-744a-4524-81a1-1836a1c9c452</semantic:incoming>
+            <semantic:outgoing>_c496fd9a-661f-4ce7-9e51-e82197fdd8b1</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Fixed input" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_e30c20ef-1753-423d-a6df-e63cfc4bc6a4"/>
+                <semantic:dataOutput name="Fixed output" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_bea0f393-41f6-40bd-88c7-781f678b6637"/>
+                <semantic:inputSet id="_48b33a9f-1f1b-43bb-bdbc-fb16e40b8f57">
+                    <semantic:dataInputRefs>_e30c20ef-1753-423d-a6df-e63cfc4bc6a4</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_6a8f1e3c-50a5-4b03-b080-01a3b8d1f72a">
+                    <semantic:dataOutputRefs>_bea0f393-41f6-40bd-88c7-781f678b6637</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_0ecf5bc2-981b-4480-900e-a0ddd34e90a3">
+                <semantic:sourceRef>_3c4249fb-f3f5-43c5-bc98-ad323603e95f</semantic:sourceRef>
+                <semantic:targetRef>_e30c20ef-1753-423d-a6df-e63cfc4bc6a4</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_e030afdc-de1f-4511-ae8e-fa96f7336078">
+                <semantic:sourceRef>_bea0f393-41f6-40bd-88c7-781f678b6637</semantic:sourceRef>
+                <semantic:targetRef>_ed0d851c-0c2e-4345-a151-483c205da611</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:businessRuleTask>
+        <semantic:exclusiveGateway id="_74755d33-ca24-40df-898e-ad96e2d6172b" name="Are there Compelling Indications?" gatewayDirection="Diverging" default="_8f584514-260e-429e-a726-9eac04546ead">
+            <semantic:incoming>_c5b39528-b2a4-4e62-940d-ee6ed4e1c83e</semantic:incoming>
+            <semantic:outgoing>_84943a03-886a-4e92-ab02-ec7d3417e9f3</semantic:outgoing>
+            <semantic:outgoing>_8f584514-260e-429e-a726-9eac04546ead</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:userTask id="_ec27e2f2-bc83-4464-a0d9-fb69f402db67" name="Prescribe Compelling Indications Drugs" implementation="##unspecified">
+            <semantic:incoming>_84943a03-886a-4e92-ab02-ec7d3417e9f3</semantic:incoming>
+            <semantic:outgoing>_fddc8ebd-bffb-497f-a62f-087d8920ae34</semantic:outgoing>
+        </semantic:userTask>
+        <semantic:businessRuleTask id="_5ca9efe0-aeee-4e73-bdb4-e6c0922a2f19" name="What is the Hypertension Stage?" implementation="##unspecified">
+            <semantic:extensionElements>
+                <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_c1df4d53-2ddd-48b3-8519-6d5fad7e523d" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_c1df4d53-2ddd-48b3-8519-6d5fad7e523d" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+            </semantic:extensionElements>
+            <semantic:incoming>_8f584514-260e-429e-a726-9eac04546ead</semantic:incoming>
+            <semantic:outgoing>_282edbe7-800a-4e1c-92cc-d50c1538a186</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Vital Signs and Measurements" itemSubjectRef="_724d47cb-dfbe-44c1-ab68-b5082dc5ee80" isCollection="false" id="_96248958-3fc6-4a87-99a2-3bcd9810c20e"/>
+                <semantic:dataOutput name="Blood Pressure Stage" itemSubjectRef="_1e2bd75f-6b0e-49d1-ac65-4d44bc94efdf" isCollection="false" triso:hidden="false" id="_6d011328-bf3a-463f-9d76-6dfcf6019d2f"/>
+                <semantic:inputSet id="_8fe89594-96d8-49eb-bc96-0d9cc297b1bf">
+                    <semantic:dataInputRefs>_96248958-3fc6-4a87-99a2-3bcd9810c20e</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_7a74bf22-e10e-494d-aeb6-de484fc7f644">
+                    <semantic:dataOutputRefs>_6d011328-bf3a-463f-9d76-6dfcf6019d2f</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_5363bc81-9e70-4659-923b-bc6c540b338a">
+                <semantic:sourceRef>_1d8d873a-456c-464e-bce5-8ea9e1f91937</semantic:sourceRef>
+                <semantic:targetRef>_96248958-3fc6-4a87-99a2-3bcd9810c20e</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_0dd0ba2b-72cc-4856-b59a-8c6981c38fe0">
+                <semantic:sourceRef>_6d011328-bf3a-463f-9d76-6dfcf6019d2f</semantic:sourceRef>
+                <semantic:targetRef>_8e059cae-dc88-4838-968c-05958d84113e</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:businessRuleTask>
+        <semantic:exclusiveGateway id="_20548fe6-16ce-4e37-8c32-d9d387f0870b" name="What is the Hypertension Stage?" gatewayDirection="Diverging" default="_67cfbe8d-0e1a-447b-897a-c83e895bbc69">
+            <semantic:incoming>_0e588afa-2e72-499a-9870-d72fb8e7f893</semantic:incoming>
+            <semantic:outgoing>_67cfbe8d-0e1a-447b-897a-c83e895bbc69</semantic:outgoing>
+            <semantic:outgoing>_1c25e58f-1aaa-406a-8d48-914eaeaf6e8d</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:subProcess id="_a91ae9ad-1cc0-43e0-a06a-292b18778298" name="Prescribe Stage 1 Drugs" triggeredByEvent="false">
+            <semantic:incoming>_67cfbe8d-0e1a-447b-897a-c83e895bbc69</semantic:incoming>
+            <semantic:outgoing>_5c717f4d-b9d0-4d6c-abc8-ac77631af4bc</semantic:outgoing>
+            <semantic:startEvent id="_dc950ae3-8327-4686-ab4b-a66239595563">
+                <semantic:outgoing>_0f265003-d4e0-4902-b716-c9c211b4a876</semantic:outgoing>
+            </semantic:startEvent>
+            <semantic:businessRuleTask id="_2ef5f3c1-ae42-420a-97b8-553b83370a8a" name="What Drug Should be Prescribed for Stage 1?" implementation="##unspecified">
+                <semantic:extensionElements>
+                    <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_904d5116-ac62-4029-9089-c724fcb734a6" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_904d5116-ac62-4029-9089-c724fcb734a6" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+                </semantic:extensionElements>
+                <semantic:incoming>_5cfa3222-436b-4b30-91bb-382307c24426</semantic:incoming>
+                <semantic:outgoing>_a00cecac-d6c6-4e27-ab39-ebd33ff993cb</semantic:outgoing>
+                <semantic:ioSpecification>
+                    <semantic:dataInput name="Patient Data" itemSubjectRef="_fb493c85-1405-48b6-911f-b73c1906cfd0" isCollection="false" id="_26a7dc0d-076b-4c27-984e-744c22ffa0e8"/>
+                    <semantic:dataInput name="Doctor Preferences" itemSubjectRef="_738d8313-3d6c-4875-8f7d-8dc442effe16" isCollection="false" id="_63c6080d-2cde-40ca-93df-55a70ce96532"/>
+                    <semantic:dataOutput name="Stage 1 Drug Choice" isCollection="false" triso:hidden="false" id="_03f37373-817d-48ae-aabf-fbe5510921eb"/>
+                    <semantic:inputSet id="_e8e936b5-14b7-4a9c-b857-3a4ca27aac18">
+                        <semantic:dataInputRefs>_26a7dc0d-076b-4c27-984e-744c22ffa0e8</semantic:dataInputRefs>
+                        <semantic:dataInputRefs>_63c6080d-2cde-40ca-93df-55a70ce96532</semantic:dataInputRefs>
+                    </semantic:inputSet>
+                    <semantic:outputSet id="_e02c8050-f496-4cad-b680-efed24e2b885">
+                        <semantic:dataOutputRefs>_03f37373-817d-48ae-aabf-fbe5510921eb</semantic:dataOutputRefs>
+                    </semantic:outputSet>
+                </semantic:ioSpecification>
+                <semantic:dataInputAssociation id="_e8cef819-5b90-4a16-ae5d-06866944daf3">
+                    <semantic:sourceRef>_e2bf6416-3c63-46f7-8e93-e8a1eca77576</semantic:sourceRef>
+                    <semantic:targetRef>_26a7dc0d-076b-4c27-984e-744c22ffa0e8</semantic:targetRef>
+                </semantic:dataInputAssociation>
+                <semantic:dataInputAssociation id="_a197dab5-9e16-439e-892c-c6612438d8b2">
+                    <semantic:sourceRef>_cc11b47b-eaa6-4496-821b-282f30a0c9ef</semantic:sourceRef>
+                    <semantic:targetRef>_26a7dc0d-076b-4c27-984e-744c22ffa0e8</semantic:targetRef>
+                </semantic:dataInputAssociation>
+                <semantic:dataOutputAssociation id="_94e74d53-dda0-47aa-bd06-ff078aba3f06">
+                    <semantic:sourceRef>_03f37373-817d-48ae-aabf-fbe5510921eb</semantic:sourceRef>
+                    <semantic:targetRef>_f9adce99-f231-49af-a526-10c96e6bb5d8</semantic:targetRef>
+                </semantic:dataOutputAssociation>
+            </semantic:businessRuleTask>
+            <semantic:exclusiveGateway id="_2b70664e-e7f6-4207-ae3e-2f3e6f472f91" name="Is Patient Pregnant?" gatewayDirection="Diverging" default="_5cfa3222-436b-4b30-91bb-382307c24426">
+                <semantic:incoming>_0f265003-d4e0-4902-b716-c9c211b4a876</semantic:incoming>
+                <semantic:outgoing>_c841c2fb-5bd7-452a-a779-cda71388b8db</semantic:outgoing>
+                <semantic:outgoing>_5cfa3222-436b-4b30-91bb-382307c24426</semantic:outgoing>
+            </semantic:exclusiveGateway>
+            <semantic:endEvent id="_9a4506a1-aa55-429d-bd1a-c07e10fecfed" name="Go to Antenatal Care Guideline">
+                <semantic:incoming>_c841c2fb-5bd7-452a-a779-cda71388b8db</semantic:incoming>
+                <semantic:signalEventDefinition id="_8f49e5fa-fbb8-482f-87f4-faab249a4b79"/>
+            </semantic:endEvent>
+            <semantic:userTask id="_a8829cb3-6843-4ea6-8af2-e027ae7dd626" name="Update Patient Record" implementation="##unspecified">
+                <semantic:incoming>_a00cecac-d6c6-4e27-ab39-ebd33ff993cb</semantic:incoming>
+                <semantic:outgoing>_8b4176da-1846-49a0-834d-f7dab6cf1dd6</semantic:outgoing>
+                <semantic:ioSpecification>
+                    <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_97adad22-b820-47ae-921a-17d5e00032a8"/>
+                    <semantic:dataInput name="Stage 1 Drug Choice" itemSubjectRef="_97dba0e0-0f6c-4c47-a959-8856e664e89e" isCollection="false" id="_ecd22d80-3a0a-44aa-ac86-a0f856811ab7"/>
+                    <semantic:inputSet id="_2c2f1001-f68d-400d-b5e1-9e1f5ac62a75">
+                        <semantic:dataInputRefs>_97adad22-b820-47ae-921a-17d5e00032a8</semantic:dataInputRefs>
+                        <semantic:dataInputRefs>_ecd22d80-3a0a-44aa-ac86-a0f856811ab7</semantic:dataInputRefs>
+                    </semantic:inputSet>
+                    <semantic:outputSet/>
+                </semantic:ioSpecification>
+                <semantic:dataInputAssociation id="_e8b99a36-cbae-416e-b93e-1bd70c9978c0">
+                    <semantic:sourceRef>_cc11b47b-eaa6-4496-821b-282f30a0c9ef</semantic:sourceRef>
+                    <semantic:targetRef>_97adad22-b820-47ae-921a-17d5e00032a8</semantic:targetRef>
+                </semantic:dataInputAssociation>
+                <semantic:dataInputAssociation id="_10f3ec9e-f0e9-47a8-a591-23a64233e2db">
+                    <semantic:sourceRef>_f9adce99-f231-49af-a526-10c96e6bb5d8</semantic:sourceRef>
+                    <semantic:targetRef>_ecd22d80-3a0a-44aa-ac86-a0f856811ab7</semantic:targetRef>
+                </semantic:dataInputAssociation>
+            </semantic:userTask>
+            <semantic:endEvent id="_69e374e8-5fc7-466e-86e5-0e3ddac9f026" name="Go to Order Medications">
+                <semantic:incoming>_8b4176da-1846-49a0-834d-f7dab6cf1dd6</semantic:incoming>
+            </semantic:endEvent>
+            <semantic:dataObjectReference id="_e2bf6416-3c63-46f7-8e93-e8a1eca77576" name="Doctor Preferences" dataObjectRef="_034a96e5-5d26-4adb-9b50-2f395b28bfb5"/>
+            <semantic:dataObjectReference id="_cc11b47b-eaa6-4496-821b-282f30a0c9ef" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+            <semantic:dataObjectReference id="_f9adce99-f231-49af-a526-10c96e6bb5d8" name="Stage 1 Drug Choice" dataObjectRef="_bc51b2d6-5c25-4a76-b694-12004992f724"/>
+            <semantic:sequenceFlow id="_0f265003-d4e0-4902-b716-c9c211b4a876" sourceRef="_dc950ae3-8327-4686-ab4b-a66239595563" targetRef="_2b70664e-e7f6-4207-ae3e-2f3e6f472f91"/>
+            <semantic:sequenceFlow id="_c841c2fb-5bd7-452a-a779-cda71388b8db" name="Yes" sourceRef="_2b70664e-e7f6-4207-ae3e-2f3e6f472f91" targetRef="_9a4506a1-aa55-429d-bd1a-c07e10fecfed">
+                <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Pregnancy.Currently Pregnant = true</semantic:conditionExpression>
+            </semantic:sequenceFlow>
+            <semantic:sequenceFlow id="_5cfa3222-436b-4b30-91bb-382307c24426" name="No" sourceRef="_2b70664e-e7f6-4207-ae3e-2f3e6f472f91" targetRef="_2ef5f3c1-ae42-420a-97b8-553b83370a8a"/>
+            <semantic:sequenceFlow id="_a00cecac-d6c6-4e27-ab39-ebd33ff993cb" sourceRef="_2ef5f3c1-ae42-420a-97b8-553b83370a8a" targetRef="_a8829cb3-6843-4ea6-8af2-e027ae7dd626"/>
+            <semantic:sequenceFlow id="_8b4176da-1846-49a0-834d-f7dab6cf1dd6" sourceRef="_a8829cb3-6843-4ea6-8af2-e027ae7dd626" targetRef="_69e374e8-5fc7-466e-86e5-0e3ddac9f026"/>
+        </semantic:subProcess>
+        <semantic:userTask id="_165a95ed-2400-4ba0-90e5-ca11fe460fc0" name="Prescribe Stage 2 Drugs" implementation="##unspecified">
+            <semantic:incoming>_1c25e58f-1aaa-406a-8d48-914eaeaf6e8d</semantic:incoming>
+            <semantic:outgoing>_5f1bae07-99ad-4497-ab4d-1d83d128aac9</semantic:outgoing>
+        </semantic:userTask>
+        <semantic:userTask id="_e4230e2e-a2c4-4693-be58-9b9559d317a6" name="Update Patient Record" implementation="##unspecified">
+            <semantic:incoming>_282edbe7-800a-4e1c-92cc-d50c1538a186</semantic:incoming>
+            <semantic:outgoing>_0e588afa-2e72-499a-9870-d72fb8e7f893</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Blood Pressure Stage" itemSubjectRef="_24976c46-22b3-416b-bb03-04a94c48f04d" isCollection="false" id="_cbab979f-e03e-4051-94e8-659e03d88b57"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_73a99a79-2636-49cc-84a9-6ed880a6e2e0"/>
+                <semantic:inputSet id="_befd3501-da9e-4f8b-a325-c36ebc9ba7d8">
+                    <semantic:dataInputRefs>_cbab979f-e03e-4051-94e8-659e03d88b57</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_fe8b6ebb-2102-4bfb-a0ec-d1f45c3e3f2d">
+                    <semantic:dataOutputRefs>_73a99a79-2636-49cc-84a9-6ed880a6e2e0</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_2f62dae8-379f-4fc8-8b34-8332996f2a4a">
+                <semantic:sourceRef>_8e059cae-dc88-4838-968c-05958d84113e</semantic:sourceRef>
+                <semantic:targetRef>_cbab979f-e03e-4051-94e8-659e03d88b57</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_6e4b9954-e496-4343-bcbd-aff5d6dceab4">
+                <semantic:sourceRef>_73a99a79-2636-49cc-84a9-6ed880a6e2e0</semantic:sourceRef>
+                <semantic:targetRef>_ad3a5390-daf1-45b8-8da3-f67c5aa1f0d3</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:userTask id="_4e7f5a6a-9b3b-46a2-9a3f-5e09f6dbdf51" name="Update Patient Record" implementation="##unspecified">
+            <semantic:incoming>_c496fd9a-661f-4ce7-9e51-e82197fdd8b1</semantic:incoming>
+            <semantic:outgoing>_c5b39528-b2a4-4e62-940d-ee6ed4e1c83e</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Compelling Indications Result" itemSubjectRef="_6217ae1a-7e11-44fa-b94d-255146b98767" isCollection="false" id="_2234bbae-6f5e-49f2-9b1c-0797e73cf081"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_4655d5e7-e017-4290-88b8-c6395a1b963f"/>
+                <semantic:inputSet id="_9c38d619-d620-4cd5-98a8-e155f3d61aac">
+                    <semantic:dataInputRefs>_2234bbae-6f5e-49f2-9b1c-0797e73cf081</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_0c9b4cc2-b152-4838-acfc-036bfb821ee3">
+                    <semantic:dataOutputRefs>_4655d5e7-e017-4290-88b8-c6395a1b963f</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_f2070857-f8e7-4d01-9646-51a5e5f13789">
+                <semantic:sourceRef>_ed0d851c-0c2e-4345-a151-483c205da611</semantic:sourceRef>
+                <semantic:targetRef>_2234bbae-6f5e-49f2-9b1c-0797e73cf081</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_11dc5586-dfe4-4e9d-9cb7-2b2dd874e9bf">
+                <semantic:sourceRef>_4655d5e7-e017-4290-88b8-c6395a1b963f</semantic:sourceRef>
+                <semantic:targetRef>_690823d0-8a5e-4e1d-aa87-5329b79d4852</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:dataObject id="_20b34b93-578d-4b72-ba58-7e2d8683b5a6" name="Hypertension Result" itemSubjectRef="_af774b11-a7e1-4c94-86ed-7f54b5e38805" isCollection="false"/>
+        <semantic:dataObject id="_1e196b23-aa86-4d13-8b69-88979ba950d0" name="Compelling Indications Result" itemSubjectRef="_6217ae1a-7e11-44fa-b94d-255146b98767" isCollection="false"/>
+        <semantic:exclusiveGateway id="_ab037824-ca89-44ad-9f85-01cda22012e6" gatewayDirection="Converging">
+            <semantic:incoming>_5f1bae07-99ad-4497-ab4d-1d83d128aac9</semantic:incoming>
+            <semantic:incoming>_5c717f4d-b9d0-4d6c-abc8-ac77631af4bc</semantic:incoming>
+            <semantic:incoming>_fddc8ebd-bffb-497f-a62f-087d8920ae34</semantic:incoming>
+            <semantic:outgoing>_91be3ee8-7417-4840-b532-7224f8bc9060</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:intermediateCatchEvent id="_47426bcd-6d4b-4b72-a356-2a68a5c7bcd4" name="3 Months">
+            <semantic:incoming>_0f55ee99-9478-4ab8-b904-8495b3cb4472</semantic:incoming>
+            <semantic:outgoing>_05564a5a-88fc-4e61-9cd2-8d03d1440b98</semantic:outgoing>
+            <semantic:timerEventDefinition id="_4f7b5d84-d9f5-4ce1-957f-149b70ed2afe"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:userTask id="_9af57f1e-c706-43e5-959c-e71fcfeb2d0d" name="Gather Blood Pressure" implementation="##unspecified">
+            <semantic:incoming>_05564a5a-88fc-4e61-9cd2-8d03d1440b98</semantic:incoming>
+            <semantic:outgoing>_1686c206-54a4-4c06-9820-703d4242f5a2</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_17bb36d6-553f-444f-be89-c628f305bd90"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_4b15867f-176a-4fed-8ecf-fcafd7c1a399"/>
+                <semantic:inputSet id="_acfd0d90-7390-4665-8283-66c2982a3a5f">
+                    <semantic:dataInputRefs>_17bb36d6-553f-444f-be89-c628f305bd90</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_83cba197-8afc-496d-a9a8-63a6fea876be">
+                    <semantic:dataOutputRefs>_4b15867f-176a-4fed-8ecf-fcafd7c1a399</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_f1e5715b-575a-4e05-b421-556ffa99520e">
+                <semantic:sourceRef>_04a227ca-d8b4-4528-994d-6ed33f2cdd1d</semantic:sourceRef>
+                <semantic:targetRef>_17bb36d6-553f-444f-be89-c628f305bd90</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_010b015d-ce6f-4996-a41b-6485dd19ccb4">
+                <semantic:sourceRef>_4b15867f-176a-4fed-8ecf-fcafd7c1a399</semantic:sourceRef>
+                <semantic:targetRef>_fe1060bb-5901-4b3d-8a10-87569b804168</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:serviceTask id="_72b42d6e-08b7-42f7-8dd9-bd715c4156b7" name="Get Most Recent Blood Pressure Reading" implementation="##WebService">
+            <semantic:incoming>_1686c206-54a4-4c06-9820-703d4242f5a2</semantic:incoming>
+            <semantic:outgoing>_f222348d-f5a2-4475-8c9d-4d7cb50216f3</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" id="_0c0c7e1f-bbfc-4edc-b816-bfb5465f7299"/>
+                <semantic:dataOutput name="Vital Signs and Measurements" itemSubjectRef="_b9966f19-058b-4e89-822e-b6434729ece0" isCollection="false" triso:hidden="false" id="_e75f2570-9d9b-4a01-81e3-43debe1261b5"/>
+                <semantic:inputSet id="_a9303ab8-5d12-48bf-8c95-4c975ea6de33">
+                    <semantic:dataInputRefs>_0c0c7e1f-bbfc-4edc-b816-bfb5465f7299</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_401aefc9-5ed2-4c4e-81d2-7fc9255cd675">
+                    <semantic:dataOutputRefs>_e75f2570-9d9b-4a01-81e3-43debe1261b5</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_fb0fea44-878d-4d38-a24d-86306c4d3812">
+                <semantic:sourceRef>_fe1060bb-5901-4b3d-8a10-87569b804168</semantic:sourceRef>
+                <semantic:targetRef>_0c0c7e1f-bbfc-4edc-b816-bfb5465f7299</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_a826a6c3-6b33-412c-afce-775422813e7d">
+                <semantic:sourceRef>_e75f2570-9d9b-4a01-81e3-43debe1261b5</semantic:sourceRef>
+                <semantic:targetRef>_7eb58fd0-2e5a-4be6-b184-11ff362f4a64</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:serviceTask>
+        <semantic:businessRuleTask id="_0b29cd9a-b136-4f1e-86de-35b28280b2cf" name="Has Blood Pressure Goal been met?" implementation="##unspecified">
+            <semantic:extensionElements>
+                <triso:interrelationship fileId="eyJmIjp7InNrdSI6IjRmMGRjNWNiLWI3MDQtNGQ2Ny1hMDc1LWZjZDk5MjUzODg1YSIsIm5hbWUiOiJIeXBlcnRlbnNpb24gRGVjaXNpb25zIiwibWltZXR5cGUiOiJhcHBsaWNhdGlvbi92bmQudHJpc28tZG1uK2pzb24ifX0=" elementId="_10dd8750-f15e-43ad-bbd1-1462f14042a0" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_10dd8750-f15e-43ad-bbd1-1462f14042a0" modelId="_44c0c078-9936-4c50-807e-5d5e21fa2436" mimeType="application/vnd.triso-dmn+json"/>
+            </semantic:extensionElements>
+            <semantic:incoming>_f222348d-f5a2-4475-8c9d-4d7cb50216f3</semantic:incoming>
+            <semantic:outgoing>_05b303ed-923d-447d-a673-982d90912672</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Fixed input" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_dcd640db-57da-4bdc-b84d-2b65de96773d"/>
+                <semantic:dataOutput name="Fixed output" itemSubjectRef="_triso-default-bpmnItemDefinition-string_id" isCollection="false" triso:hidden="true" id="_50eac942-93c8-4ec5-b595-9021b0c6d844"/>
+                <semantic:inputSet id="_ad81a465-52d8-4d4a-a08b-a18cc1beddf8">
+                    <semantic:dataInputRefs>_dcd640db-57da-4bdc-b84d-2b65de96773d</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_4d619393-40f9-42a7-8399-8de769c28964">
+                    <semantic:dataOutputRefs>_50eac942-93c8-4ec5-b595-9021b0c6d844</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_dc1e2107-b8e8-40fe-b353-d8a9d7e1396e">
+                <semantic:sourceRef>_7eb58fd0-2e5a-4be6-b184-11ff362f4a64</semantic:sourceRef>
+                <semantic:targetRef>_dcd640db-57da-4bdc-b84d-2b65de96773d</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataInputAssociation id="_98f4471f-3706-4215-9107-3e2e1972e6bd">
+                <semantic:sourceRef>_c153f229-47bd-4d83-80ab-1a799488db33</semantic:sourceRef>
+                <semantic:targetRef>_dcd640db-57da-4bdc-b84d-2b65de96773d</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_ab806c2a-e6b5-42fd-b3f8-680786d4be8c">
+                <semantic:sourceRef>_50eac942-93c8-4ec5-b595-9021b0c6d844</semantic:sourceRef>
+                <semantic:targetRef>_9acb2bcd-5244-4ec1-b26c-d22b4a65d963</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:businessRuleTask>
+        <semantic:userTask id="_dcbd75b7-3da4-4e9e-9ce8-aa812d2886d8" name="Update Patient Record" implementation="##unspecified">
+            <semantic:incoming>_05b303ed-923d-447d-a673-982d90912672</semantic:incoming>
+            <semantic:outgoing>_d709ac29-c2e5-46ce-a8c9-035630a9142e</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataInput name="Blood Pressure Goal Result" itemSubjectRef="_bbafbf38-dc43-49e2-a71b-66b0ce5b9f79" isCollection="false" id="_0b9b84b5-ea72-4bb7-ad20-b6a669475256"/>
+                <semantic:dataOutput name="Patient Data" itemSubjectRef="_a02b603e-ac09-4809-b9ec-3f4b478f11ac" isCollection="false" triso:hidden="false" id="_6c566383-2607-4adf-97d6-52b6751ebaf6"/>
+                <semantic:inputSet id="_776d7f3f-b94d-48fc-a0c8-d63b354947c9">
+                    <semantic:dataInputRefs>_0b9b84b5-ea72-4bb7-ad20-b6a669475256</semantic:dataInputRefs>
+                </semantic:inputSet>
+                <semantic:outputSet id="_02f0edcb-6373-4073-bdf6-4a5bc8a8d7c3">
+                    <semantic:dataOutputRefs>_6c566383-2607-4adf-97d6-52b6751ebaf6</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataInputAssociation id="_159abec9-59ee-4e82-a647-9a91160b722e">
+                <semantic:sourceRef>_9acb2bcd-5244-4ec1-b26c-d22b4a65d963</semantic:sourceRef>
+                <semantic:targetRef>_0b9b84b5-ea72-4bb7-ad20-b6a669475256</semantic:targetRef>
+            </semantic:dataInputAssociation>
+            <semantic:dataOutputAssociation id="_c9a5a8ef-f340-40ed-b745-e1bd1a7a5a14">
+                <semantic:sourceRef>_6c566383-2607-4adf-97d6-52b6751ebaf6</semantic:sourceRef>
+                <semantic:targetRef>_63577aec-2c7c-4964-9f29-ffb8104a3a11</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:userTask>
+        <semantic:exclusiveGateway id="_ba4ad0bb-7004-4698-b4e8-5ba5e0bb1a55" name="Has Blood Pressure Goal been met?" gatewayDirection="Diverging" default="_4dfe082f-3793-4618-8b7f-dca543cfa347">
+            <semantic:incoming>_d709ac29-c2e5-46ce-a8c9-035630a9142e</semantic:incoming>
+            <semantic:outgoing>_d3f63b8c-8976-4b14-96b5-18cf47952b03</semantic:outgoing>
+            <semantic:outgoing>_4dfe082f-3793-4618-8b7f-dca543cfa347</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:endEvent id="_806b1885-2fbc-4554-92ca-db38ebb02536">
+            <semantic:incoming>_d3f63b8c-8976-4b14-96b5-18cf47952b03</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:task id="_76ac8e05-7fd0-4dc9-a0d2-d9fa53be4ab7" name="Optimize">
+            <semantic:incoming>_4dfe082f-3793-4618-8b7f-dca543cfa347</semantic:incoming>
+            <semantic:outgoing>_abcf9459-34c6-43d5-be70-b48e4722298c</semantic:outgoing>
+        </semantic:task>
+        <semantic:endEvent id="_5a68dbed-a049-4044-9626-bd43646f7689">
+            <semantic:incoming>_abcf9459-34c6-43d5-be70-b48e4722298c</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:dataObject id="_f92246d5-6833-4582-a543-2db99508e350" name="Blood Pressure Goal Result" itemSubjectRef="_bbafbf38-dc43-49e2-a71b-66b0ce5b9f79" isCollection="false">
+            <semantic:extensionElements>
+                <triso:semanticLink id="_56b634f0-a199-430b-acde-978e290d8774" name="Hypertension Decisions - Blood Pressure Goal Result" modelURI="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#_65d92d09-7f2a-4885-a9b9-332a88403bc8"/>
+            </semantic:extensionElements>
+        </semantic:dataObject>
+        <semantic:dataObject id="_e534d525-c4fa-455f-b643-a7a188ed17fb" name="Blood Pressure" itemSubjectRef="_4ada72cc-72b3-428e-b0be-7b3034981b15" isCollection="false"/>
+        <semantic:subProcess id="_9916a4fb-3949-4c30-af53-dfa246fc0044" name="Order Medications" triggeredByEvent="false">
+            <semantic:incoming>_91be3ee8-7417-4840-b532-7224f8bc9060</semantic:incoming>
+            <semantic:outgoing>_0f55ee99-9478-4ab8-b904-8495b3cb4472</semantic:outgoing>
+        </semantic:subProcess>
+        <semantic:dataObject id="_034a96e5-5d26-4adb-9b50-2f395b28bfb5" name="Doctor Preferences" itemSubjectRef="_ebf4bd5f-b4ce-4186-b813-d6c33f13587b" isCollection="false"/>
+        <semantic:dataObject id="_bc51b2d6-5c25-4a76-b694-12004992f724" name="Stage 1 Drug Choice" itemSubjectRef="_97dba0e0-0f6c-4c47-a959-8856e664e89e" isCollection="false"/>
+        <semantic:dataObjectReference id="_c8d11b55-efd5-4d31-bc32-a5b242109497" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_e326f7db-41f8-4ad3-9542-b00152f378cc" name="Blood Pressure Goals" dataObjectRef="_763682a0-2361-4ccc-bcf4-e75c7492bc68"/>
+        <semantic:dataObjectReference id="_1de95173-6ca9-4463-8663-5f2aefbeaeb3" name="Lifestyle Guidelines" dataObjectRef="_2915fe7b-2452-458b-a6a6-691469c43bc7"/>
+        <semantic:dataObjectReference id="_8e059cae-dc88-4838-968c-05958d84113e" name="Blood Pressure Stage" dataObjectRef="_54b744e4-bfd3-4b1e-982c-c45567234212"/>
+        <semantic:dataObjectReference id="_fa30f0a8-f51b-4744-97cc-52f8071d6fff" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_7190bf1d-cd59-4196-843b-a2b5295c9aa7" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_669d1da9-a68a-42a1-a1a2-0c7b2c23576c" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_3c4249fb-f3f5-43c5-bc98-ad323603e95f" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_36629777-2440-4b08-b7ff-b653ca3c2337" name="Hypertension Result" dataObjectRef="_20b34b93-578d-4b72-ba58-7e2d8683b5a6"/>
+        <semantic:dataObjectReference id="_ad3a5390-daf1-45b8-8da3-f67c5aa1f0d3" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_ed0d851c-0c2e-4345-a151-483c205da611" name="Compelling Indications Result" dataObjectRef="_1e196b23-aa86-4d13-8b69-88979ba950d0"/>
+        <semantic:dataObjectReference id="_690823d0-8a5e-4e1d-aa87-5329b79d4852" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_63577aec-2c7c-4964-9f29-ffb8104a3a11" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_c153f229-47bd-4d83-80ab-1a799488db33" name="Blood Pressure Goals" dataObjectRef="_763682a0-2361-4ccc-bcf4-e75c7492bc68"/>
+        <semantic:dataObjectReference id="_fe1060bb-5901-4b3d-8a10-87569b804168" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_04a227ca-d8b4-4528-994d-6ed33f2cdd1d" name="Patient Data" dataObjectRef="_38c5ec02-e5d6-4310-add6-8ceb1e04d252"/>
+        <semantic:dataObjectReference id="_41d7ccec-f17a-4fc7-ba12-9f1af20d3991" name="Blood Pressure Goal Result" dataObjectRef="_f92246d5-6833-4582-a543-2db99508e350"/>
+        <semantic:dataObjectReference id="_9acb2bcd-5244-4ec1-b26c-d22b4a65d963" name="Blood Pressure Goal Result" dataObjectRef="_f92246d5-6833-4582-a543-2db99508e350"/>
+        <semantic:dataObjectReference id="_4bcad433-5cc2-436e-baaf-554e60ca03d2" name="Blood Pressure" dataObjectRef="_e534d525-c4fa-455f-b643-a7a188ed17fb"/>
+        <semantic:dataObjectReference id="_9cf2626d-9fca-4605-bee1-33b049e80ef1" name="Blood Pressure" dataObjectRef="_e534d525-c4fa-455f-b643-a7a188ed17fb"/>
+        <semantic:dataObjectReference id="_1d8d873a-456c-464e-bce5-8ea9e1f91937" name="Blood Pressure" dataObjectRef="_e534d525-c4fa-455f-b643-a7a188ed17fb"/>
+        <semantic:dataObjectReference id="_7eb58fd0-2e5a-4be6-b184-11ff362f4a64" name="Blood Pressure" dataObjectRef="_e534d525-c4fa-455f-b643-a7a188ed17fb"/>
+        <semantic:sequenceFlow id="_1ecdf0f3-0d4e-4f6a-b422-781bbfd16242" sourceRef="_397e3ad9-d2d7-4899-b5b2-a9ebf0375130" targetRef="_51f19207-8c44-4dba-a4f6-822d6161e964"/>
+        <semantic:sequenceFlow id="_246896fb-5c29-4bc9-b934-c8b758e8dd3f" sourceRef="_4c95c004-c667-44df-ad55-1717fb720286" targetRef="_710e8d93-b7e5-4007-8514-72c1dbef505a"/>
+        <semantic:sequenceFlow id="_82e09496-a551-4426-acbb-2970cd1b4125" name="No" sourceRef="_e7612795-59e5-4339-8608-d0e5e5d86efc" targetRef="_66d4f1ef-b2ec-4acd-bbe6-b6b99ca7a29d"/>
+        <semantic:sequenceFlow id="_ee50e693-d0c8-4d23-8e9f-944cfffda7ec" name="Yes" sourceRef="_e7612795-59e5-4339-8608-d0e5e5d86efc" targetRef="_c353b44d-750a-41c3-9850-f122771c1f57">
+            <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Hypertension.Condition = true</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow id="_7baeaab3-6eb9-4d72-a773-53daea9fab5b" sourceRef="_c353b44d-750a-41c3-9850-f122771c1f57" targetRef="_25cda44b-7d0a-41af-a35e-0124be0e3177"/>
+        <semantic:sequenceFlow id="_c5fdadce-fbed-42fe-9d37-fa9ae8247c4e" sourceRef="_25cda44b-7d0a-41af-a35e-0124be0e3177" targetRef="_ea1c9cd4-bf32-434f-bd58-b85e26eb7f92"/>
+        <semantic:sequenceFlow id="_1ebab3c0-6eec-4536-9646-2dbaf253bd91" sourceRef="_ea1c9cd4-bf32-434f-bd58-b85e26eb7f92" targetRef="_d27b93f7-57dd-4c93-85e7-299ca0f0b13f"/>
+        <semantic:sequenceFlow id="_bd10d419-43e8-4d40-b595-f669c3cda795" name="Yes" sourceRef="_8f6036a4-d9cd-4527-9315-35ec579b9ac4" targetRef="_f70fd186-4f13-4a69-ba4d-4ccc5c8c0f15">
+            <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Hypertension.Goal Met = true</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow id="_31566b13-36e9-481d-8116-caceda99f291" sourceRef="_51f19207-8c44-4dba-a4f6-822d6161e964" targetRef="_4c95c004-c667-44df-ad55-1717fb720286"/>
+        <semantic:sequenceFlow id="_aa635711-95ca-463c-9e8c-4b6e147758a8" sourceRef="_d27b93f7-57dd-4c93-85e7-299ca0f0b13f" targetRef="_a1774f76-2f8c-443f-9034-f976ed5a7bfe"/>
+        <semantic:sequenceFlow id="_5e6eb8f8-b8c1-4df6-9eb8-928b2d14b50c" sourceRef="_710e8d93-b7e5-4007-8514-72c1dbef505a" targetRef="_e7612795-59e5-4339-8608-d0e5e5d86efc"/>
+        <semantic:sequenceFlow id="_a3613ae7-c34c-42ac-b644-067e531b9ecb" sourceRef="_2ac0487c-ea56-4254-b4f4-ae16bc320dad" targetRef="_8f6036a4-d9cd-4527-9315-35ec579b9ac4"/>
+        <semantic:sequenceFlow id="_47c03254-10ad-42a2-9256-df1d89a7ac16" sourceRef="_a1774f76-2f8c-443f-9034-f976ed5a7bfe" targetRef="_2ac0487c-ea56-4254-b4f4-ae16bc320dad"/>
+        <semantic:sequenceFlow id="_a53ac577-744a-4524-81a1-1836a1c9c452" name="No" sourceRef="_8f6036a4-d9cd-4527-9315-35ec579b9ac4" targetRef="_316eea29-edf3-461f-a9dd-859d2114ce46"/>
+        <semantic:sequenceFlow id="_c496fd9a-661f-4ce7-9e51-e82197fdd8b1" sourceRef="_316eea29-edf3-461f-a9dd-859d2114ce46" targetRef="_4e7f5a6a-9b3b-46a2-9a3f-5e09f6dbdf51"/>
+        <semantic:sequenceFlow id="_84943a03-886a-4e92-ab02-ec7d3417e9f3" name="Yes" sourceRef="_74755d33-ca24-40df-898e-ad96e2d6172b" targetRef="_ec27e2f2-bc83-4464-a0d9-fb69f402db67">
+            <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Hypertension.Compelling Indications = true</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow id="_8f584514-260e-429e-a726-9eac04546ead" name="No" sourceRef="_74755d33-ca24-40df-898e-ad96e2d6172b" targetRef="_5ca9efe0-aeee-4e73-bdb4-e6c0922a2f19"/>
+        <semantic:sequenceFlow id="_282edbe7-800a-4e1c-92cc-d50c1538a186" sourceRef="_5ca9efe0-aeee-4e73-bdb4-e6c0922a2f19" targetRef="_e4230e2e-a2c4-4693-be58-9b9559d317a6"/>
+        <semantic:sequenceFlow id="_67cfbe8d-0e1a-447b-897a-c83e895bbc69" name="Stage 1" sourceRef="_20548fe6-16ce-4e37-8c32-d9d387f0870b" targetRef="_a91ae9ad-1cc0-43e0-a06a-292b18778298"/>
+        <semantic:sequenceFlow id="_1c25e58f-1aaa-406a-8d48-914eaeaf6e8d" name="Stage 2" sourceRef="_20548fe6-16ce-4e37-8c32-d9d387f0870b" targetRef="_165a95ed-2400-4ba0-90e5-ca11fe460fc0">
+            <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Hypertension.Stage = "Stage 2"</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow id="_0e588afa-2e72-499a-9870-d72fb8e7f893" sourceRef="_e4230e2e-a2c4-4693-be58-9b9559d317a6" targetRef="_20548fe6-16ce-4e37-8c32-d9d387f0870b"/>
+        <semantic:sequenceFlow id="_c5b39528-b2a4-4e62-940d-ee6ed4e1c83e" sourceRef="_4e7f5a6a-9b3b-46a2-9a3f-5e09f6dbdf51" targetRef="_74755d33-ca24-40df-898e-ad96e2d6172b"/>
+        <semantic:sequenceFlow id="_5f1bae07-99ad-4497-ab4d-1d83d128aac9" sourceRef="_165a95ed-2400-4ba0-90e5-ca11fe460fc0" targetRef="_ab037824-ca89-44ad-9f85-01cda22012e6"/>
+        <semantic:sequenceFlow id="_5c717f4d-b9d0-4d6c-abc8-ac77631af4bc" sourceRef="_a91ae9ad-1cc0-43e0-a06a-292b18778298" targetRef="_ab037824-ca89-44ad-9f85-01cda22012e6"/>
+        <semantic:sequenceFlow id="_fddc8ebd-bffb-497f-a62f-087d8920ae34" sourceRef="_ec27e2f2-bc83-4464-a0d9-fb69f402db67" targetRef="_ab037824-ca89-44ad-9f85-01cda22012e6"/>
+        <semantic:sequenceFlow id="_91be3ee8-7417-4840-b532-7224f8bc9060" sourceRef="_ab037824-ca89-44ad-9f85-01cda22012e6" targetRef="_9916a4fb-3949-4c30-af53-dfa246fc0044"/>
+        <semantic:sequenceFlow id="_1686c206-54a4-4c06-9820-703d4242f5a2" sourceRef="_9af57f1e-c706-43e5-959c-e71fcfeb2d0d" targetRef="_72b42d6e-08b7-42f7-8dd9-bd715c4156b7"/>
+        <semantic:sequenceFlow id="_f222348d-f5a2-4475-8c9d-4d7cb50216f3" sourceRef="_72b42d6e-08b7-42f7-8dd9-bd715c4156b7" targetRef="_0b29cd9a-b136-4f1e-86de-35b28280b2cf"/>
+        <semantic:sequenceFlow id="_05b303ed-923d-447d-a673-982d90912672" sourceRef="_0b29cd9a-b136-4f1e-86de-35b28280b2cf" targetRef="_dcbd75b7-3da4-4e9e-9ce8-aa812d2886d8"/>
+        <semantic:sequenceFlow id="_05564a5a-88fc-4e61-9cd2-8d03d1440b98" sourceRef="_47426bcd-6d4b-4b72-a356-2a68a5c7bcd4" targetRef="_9af57f1e-c706-43e5-959c-e71fcfeb2d0d"/>
+        <semantic:sequenceFlow id="_d709ac29-c2e5-46ce-a8c9-035630a9142e" sourceRef="_dcbd75b7-3da4-4e9e-9ce8-aa812d2886d8" targetRef="_ba4ad0bb-7004-4698-b4e8-5ba5e0bb1a55"/>
+        <semantic:sequenceFlow id="_d3f63b8c-8976-4b14-96b5-18cf47952b03" name="Yes" sourceRef="_ba4ad0bb-7004-4698-b4e8-5ba5e0bb1a55" targetRef="_806b1885-2fbc-4554-92ca-db38ebb02536">
+            <semantic:conditionExpression language="http://www.omg.org/spec/DMN/20180521/FEEL/" triso:unparsed="false" xsi:type="semantic:tFormalExpression">Patient Data.Health Conditions.Hypertension.Goal Met = true</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow id="_4dfe082f-3793-4618-8b7f-dca543cfa347" name="No" sourceRef="_ba4ad0bb-7004-4698-b4e8-5ba5e0bb1a55" targetRef="_76ac8e05-7fd0-4dc9-a0d2-d9fa53be4ab7"/>
+        <semantic:sequenceFlow id="_abcf9459-34c6-43d5-be70-b48e4722298c" sourceRef="_76ac8e05-7fd0-4dc9-a0d2-d9fa53be4ab7" targetRef="_5a68dbed-a049-4044-9626-bd43646f7689"/>
+        <semantic:sequenceFlow id="_0f55ee99-9478-4ab8-b904-8495b3cb4472" sourceRef="_9916a4fb-3949-4c30-af53-dfa246fc0044" targetRef="_47426bcd-6d4b-4b72-a356-2a68a5c7bcd4"/>
+    </semantic:process>
+    <bpmndi:BPMNDiagram id="_25439b4d-b36d-47b5-9a73-cb91223b5417" name="Blood Pressure Screening, Diagnosis, and Treatment">
+        <bpmndi:BPMNPlane bpmnElement="_7d9d877b-6672-4ab4-a7cd-8f2b3d52bb82" id="_25439b4d-b36d-47b5-9a73-cb91223b5417_plane" trisobpmn:diagramWidth="2367.0735931396484" trisobpmn:diagramHeight="1342">
+            <bpmndi:BPMNShape id="_afd211b8-6f39-4abd-93cb-409ec7e94f3c" bpmnElement="_397e3ad9-d2d7-4899-b5b2-a9ebf0375130" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="50" y="170" width="32" height="32"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_f990a92d-76f0-40cc-b17d-91b079aff1aa" bpmnElement="_4c95c004-c667-44df-ad55-1717fb720286" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="350" y="148" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="353.5" y="165.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_47154d35-ece1-45a6-8eb1-e5d39e9abd8f" bpmnElement="_1732bc38-6a4b-4c23-a6dd-c20f0d87f4ab" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="102.5" y="50" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="60.5625" x="89.21875" y="95"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_1e21f1b1-b253-4156-b160-330c3f0fff67" bpmnElement="_e7612795-59e5-4339-8608-d0e5e5d86efc" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="739" y="166.98780542612076" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="110" x="645.7867965698242" y="150.01707240343094"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_39a9486e-c87c-467a-9172-479a349cc947" bpmnElement="_66d4f1ef-b2ec-4acd-bbe6-b6b99ca7a29d" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="856.5" y="168" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_e4f3a27d-0fff-47fa-80b9-35e4097ebc1a" bpmnElement="_c353b44d-750a-41c3-9850-f122771c1f57" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="152" y="376" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="155.5" y="400.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_2f5a9feb-73ce-4a91-b94f-dbe52063c164" bpmnElement="_25cda44b-7d0a-41af-a35e-0124be0e3177" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="303.5" y="396" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="266.5" y="442"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_bf970a6a-1290-4d69-bf68-19b9a4f565c6" bpmnElement="_ea1c9cd4-bf32-434f-bd58-b85e26eb7f92" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="394.5" y="376" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="398" y="400.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_0012ea4f-638b-42ce-9a8a-3cbdd3b05c7d" bpmnElement="_a1774f76-2f8c-443f-9034-f976ed5a7bfe" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="745.5" y="376" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="749" y="393.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_c8d11b55-efd5-4d31-bc32-a5b242109497_di" bpmnElement="_c8d11b55-efd5-4d31-bc32-a5b242109497" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="500.5" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="462.5" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_e326f7db-41f8-4ad3-9542-b00152f378cc_di" bpmnElement="_e326f7db-41f8-4ad3-9542-b00152f378cc" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="684.2867965698242" y="459" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="107" x="647.7867965698242" y="504"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_fb853d96-7ee6-4f56-80c3-ac6036917704" bpmnElement="_8f6036a4-d9cd-4527-9315-35ec579b9ac4" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1117.5" y="393.98780542612076" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="110" x="1037.2867965698242" y="376.0170724034309"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_adfb967d-a1bc-49d6-860f-a2066cf7d1d4" bpmnElement="_f70fd186-4f13-4a69-ba4d-4ccc5c8c0f15" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1230.2867965698242" y="395" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_1de95173-6ca9-4463-8663-5f2aefbeaeb3_di" bpmnElement="_1de95173-6ca9-4463-8663-5f2aefbeaeb3" color:background-color="#CCFFCC" color:border-color="#000000">
+                <dc:Bounds x="102.5" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="95.40625" x="71.796875" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_8e059cae-dc88-4838-968c-05958d84113e_di" bpmnElement="_8e059cae-dc88-4838-968c-05958d84113e" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="696" y="702.0121945738792" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="658" y="747.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_9fb989fd-927b-498e-bc66-9f650a629af6" bpmnElement="_51f19207-8c44-4dba-a4f6-822d6161e964" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="152" y="148" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="155.5" y="165.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_2b32c65a-2d20-4057-b2a9-9feee152d349" bpmnElement="_d27b93f7-57dd-4c93-85e7-299ca0f0b13f" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="560" y="376" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="563.5" y="393.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_fa30f0a8-f51b-4744-97cc-52f8071d6fff_di" bpmnElement="_fa30f0a8-f51b-4744-97cc-52f8071d6fff" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="345.5" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="307.5" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_cdd41b0f-952d-4d71-a89e-8724a5a41617" bpmnElement="_710e8d93-b7e5-4007-8514-72c1dbef505a" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="532" y="148.00508790583558" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="535.5" y="172.50508790583558"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_7190bf1d-cd59-4196-843b-a2b5295c9aa7_di" bpmnElement="_7190bf1d-cd59-4196-843b-a2b5295c9aa7" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="644.5" y="51" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="606.5" y="96"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_4cef4e55-cd0c-459c-8f4e-10c04aa7f61f" bpmnElement="_2ac0487c-ea56-4254-b4f4-ae16bc320dad" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="919" y="375" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="922.5" y="399.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_669d1da9-a68a-42a1-a1a2-0c7b2c23576c_di" bpmnElement="_669d1da9-a68a-42a1-a1a2-0c7b2c23576c" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1033.5" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="995.5" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_23ae9dbe-fb6a-453a-88b2-e0271388cac8" bpmnElement="_316eea29-edf3-461f-a9dd-859d2114ce46" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="152" y="602" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="155.5" y="619.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_3c4249fb-f3f5-43c5-bc98-ad323603e95f_di" bpmnElement="_3c4249fb-f3f5-43c5-bc98-ad323603e95f" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="102.5" y="527" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="64.5" y="572"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_42788252-6ec3-4032-ac5a-07bfada8aef2" bpmnElement="_74755d33-ca24-40df-898e-ad96e2d6172b" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="486" y="619.9878054261208" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="110" x="401.7867965698242" y="601.0170724034309"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_44d24d11-08bb-4782-848d-553cd0a395ae" bpmnElement="_ec27e2f2-bc83-4464-a0d9-fb69f402db67" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="458.7867965698242" y="814" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="462.2867965698242" y="831.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_79c4b5c3-204b-4741-9b67-52df9aa38844" bpmnElement="_5ca9efe0-aeee-4e73-bdb4-e6c0922a2f19" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="592.5" y="602" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="596" y="619.25"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_7c9d421e-2fa7-4e53-bb2e-c70ad1b23c3b" bpmnElement="_20548fe6-16ce-4e37-8c32-d9d387f0870b" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="983.5" y="619.9878054261208" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="110" x="888.2867965698242" y="593.0170724034309"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_b23c310b-8522-4de1-ae56-2ba45e54fd6f" bpmnElement="_a91ae9ad-1cc0-43e0-a06a-292b18778298" triso:targetpage="_c3467887-a0d2-4d85-a61b-f870a18fd270" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1140.0735931396484" y="602" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="1143.5735931396484" y="626.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_f7aabecc-143a-442f-bf20-8ab6674335b9" bpmnElement="_165a95ed-2400-4ba0-90e5-ca11fe460fc0" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="956.2867965698242" y="735.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="959.7867965698242" y="759.5121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_851d3d4b-fd86-4add-a5fb-5975c8d3340a" bpmnElement="_e4230e2e-a2c4-4693-be58-9b9559d317a6" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="759" y="602" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="762.5" y="626.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_965b6873-b76b-443d-a16f-16313699d5de" bpmnElement="_4e7f5a6a-9b3b-46a2-9a3f-5e09f6dbdf51" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="294.5" y="602" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="298" y="626.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_36629777-2440-4b08-b7ff-b653ca3c2337_di" bpmnElement="_36629777-2440-4b08-b7ff-b653ca3c2337" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="471" y="51" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="99.0625" x="438.46875" y="96"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_ad3a5390-daf1-45b8-8da3-f67c5aa1f0d3_di" bpmnElement="_ad3a5390-daf1-45b8-8da3-f67c5aa1f0d3" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="857.5" y="702.0121945738792" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="819.5" y="747.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_ed0d851c-0c2e-4345-a151-483c205da611_di" bpmnElement="_ed0d851c-0c2e-4345-a151-483c205da611" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="253" y="702.0121945738792" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="86.84375" x="226.578125" y="747.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_0a674c87-1c8d-448b-a03a-3a4f9009031c" bpmnElement="_ab037824-ca89-44ad-9f85-01cda22012e6" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1167.2867965698242" y="753" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_c52d95b3-c2cb-44b5-a816-7db76988151b" bpmnElement="_47426bcd-6d4b-4b72-a356-2a68a5c7bcd4" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1484.8603897094727" y="755.0121945738792" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="45.25" x="1457.2353897094727" y="745.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_690823d0-8a5e-4e1d-aa87-5329b79d4852_di" bpmnElement="_690823d0-8a5e-4e1d-aa87-5329b79d4852" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="394.5" y="702.0121945738792" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="356.5" y="747.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_63577aec-2c7c-4964-9f29-ffb8104a3a11_di" bpmnElement="_63577aec-2c7c-4964-9f29-ffb8104a3a11" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="790.5" y="969" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="752.5" y="1014"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_c5d4e611-7700-4287-980d-9c785c318930" bpmnElement="_dcbd75b7-3da4-4e9e-9ce8-aa812d2886d8" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="676" y="1069.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="679.5" y="1093.5121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_c153f229-47bd-4d83-80ab-1a799488db33_di" bpmnElement="_c153f229-47bd-4d83-80ab-1a799488db33" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="429.5" y="1180" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="391.5" y="1225"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_382e33f0-d52d-403f-b04d-d2f25983d219" bpmnElement="_0b29cd9a-b136-4f1e-86de-35b28280b2cf" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="502.5" y="1069.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="506" y="1086.2621945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_e1543c93-5536-4fba-a102-822ef8abe7d1" bpmnElement="_72b42d6e-08b7-42f7-8dd9-bd715c4156b7" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="318" y="1069.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="41.5" width="89" x="321.5" y="1086.2621945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_fe1060bb-5901-4b3d-8a10-87569b804168_di" bpmnElement="_fe1060bb-5901-4b3d-8a10-87569b804168" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="257.5" y="969" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="219.5" y="1014"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_ba37d7f1-40e1-4920-adf5-d204fe21c813" bpmnElement="_9af57f1e-c706-43e5-959c-e71fcfeb2d0d" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="151.5" y="1069.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27" width="89" x="155" y="1093.5121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_04a227ca-d8b4-4528-994d-6ed33f2cdd1d_di" bpmnElement="_04a227ca-d8b4-4528-994d-6ed33f2cdd1d" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="102.5" y="969" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="64.5" y="1014"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_575ec0d8-c2f7-4f20-afbf-a16499a35a84" bpmnElement="_ba4ad0bb-7004-4698-b4e8-5ba5e0bb1a55" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="867" y="1087" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="97.84375" x="789.078125" y="1068.7989901304245"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_5568151e-1ca1-4487-8cf6-78f19d685d9a" bpmnElement="_806b1885-2fbc-4554-92ca-db38ebb02536" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="869.7867965698242" y="1182.0243891477585" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_f20d8088-beb1-4e80-a919-e41ce9a381ee" bpmnElement="_76ac8e05-7fd0-4dc9-a0d2-d9fa53be4ab7" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="983.5" y="1069.0121945738792" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.5" width="89" x="987" y="1100.7621945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_3673cbd4-71d1-4f05-a2ba-6953c0ca551b" bpmnElement="_5a68dbed-a049-4044-9626-bd43646f7689" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1134.5" y="1089.0121945738792" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_41d7ccec-f17a-4fc7-ba12-9f1af20d3991_di" bpmnElement="_41d7ccec-f17a-4fc7-ba12-9f1af20d3991" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="857.5" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="101.5" x="823.75" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_9acb2bcd-5244-4ec1-b26c-d22b4a65d963_di" bpmnElement="_9acb2bcd-5244-4ec1-b26c-d22b4a65d963" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="622" y="969" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="27.015625" width="101.5" x="588.25" y="1014"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_4bcad433-5cc2-436e-baaf-554e60ca03d2_di" bpmnElement="_4bcad433-5cc2-436e-baaf-554e60ca03d2" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="277.5" y="51" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="75.21875" x="256.890625" y="96"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_9cf2626d-9fca-4605-bee1-33b049e80ef1_di" bpmnElement="_9cf2626d-9fca-4605-bee1-33b049e80ef1" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="684.2867965698242" y="278" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="75.21875" x="663.6774215698242" y="323"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_1d8d873a-456c-464e-bce5-8ea9e1f91937_di" bpmnElement="_1d8d873a-456c-464e-bce5-8ea9e1f91937" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="545" y="702.0121945738792" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="75.21875" x="524.390625" y="747.0121945738792"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_7eb58fd0-2e5a-4be6-b184-11ff362f4a64_di" bpmnElement="_7eb58fd0-2e5a-4be6-b184-11ff362f4a64" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="441" y="969" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="75.21875" x="420.390625" y="1014"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_82bbadac-a5d9-4924-a6f9-9d8a57b33cc2" bpmnElement="_9916a4fb-3949-4c30-af53-dfa246fc0044" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="1298.8603897094727" y="734.7989901304245" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.5" width="89" x="1302.3603897094727" y="766.5489901304245"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge id="_45557931-4e9f-4572-867b-de75946832c8" color:border-color="#000000" bpmnElement="_1ecdf0f3-0d4e-4f6a-b422-781bbfd16242">
+                <di:waypoint x="81" y="186"/>
+                <di:waypoint x="153" y="186"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_2f428115-7a01-4307-97fd-b66ffc4fd0bf" color:border-color="#000000" bpmnElement="_b9e73e28-02e1-4c00-88b6-ab2c10cec0fd" targetElement="_9fb989fd-927b-498e-bc66-9f650a629af6">
+                <di:waypoint x="135.5" y="70"/>
+                <di:waypoint x="184" y="70"/>
+                <di:waypoint x="184" y="148"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_f5466759-957c-4f07-9f8c-fe242bf32104" color:border-color="#000000" bpmnElement="_246896fb-5c29-4bc9-b934-c8b758e8dd3f">
+                <di:waypoint x="445" y="186"/>
+                <di:waypoint x="533" y="186.00508790583558"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_287c5cc1-28b2-4601-b7df-d29179d3b1ff" color:border-color="#000000" bpmnElement="_82e09496-a551-4426-acbb-2970cd1b4125">
+                <di:waypoint x="780.5735931396484" y="186.78679555654526"/>
+                <di:waypoint x="856.5001628630987" y="186.9819528486173"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="764.0368763497165" y="191.88565936960595"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_b214254d-55e8-4762-ad74-3d5ae9f9d89a" color:border-color="#000000" bpmnElement="_ee50e693-d0c8-4d23-8e9f-944cfffda7ec">
+                <di:waypoint x="760" y="207.01219457387924"/>
+                <di:waypoint x="760" y="248.01219457387924"/>
+                <di:waypoint x="200" y="248.01219457387924"/>
+                <di:waypoint x="200" y="376"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+                    <dc:Bounds height="12.515625" width="110" x="426" y="253.01219457387924"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_478e9fef-fbd5-4b2e-9b93-bfa48b0b2d49" color:border-color="#000000" bpmnElement="_7baeaab3-6eb9-4d72-a773-53daea9fab5b">
+                <di:waypoint x="247" y="414"/>
+                <di:waypoint x="303.5" y="414"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_6d65a2e8-786c-42ab-a3ea-212a9761c41d" color:border-color="#000000" bpmnElement="_c5fdadce-fbed-42fe-9d37-fa9ae8247c4e">
+                <di:waypoint x="338.5" y="414"/>
+                <di:waypoint x="394.5" y="414"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_07b296c5-a79b-40b3-8987-274ecbb0ae75" color:border-color="#000000" bpmnElement="_1ebab3c0-6eec-4536-9646-2dbaf253bd91">
+                <di:waypoint x="489.5" y="414"/>
+                <di:waypoint x="561" y="414"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a876fe37-ce4a-4e7f-b048-f20500c08472" color:border-color="#000000" bpmnElement="_88b3d182-deb4-4e38-9d1d-c6ae51da44ee" sourceElement="_bf970a6a-1290-4d69-bf68-19b9a4f565c6">
+                <di:waypoint x="458.5" y="376"/>
+                <di:waypoint x="458.5" y="298"/>
+                <di:waypoint x="500.5" y="298"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_f1f54842-efa4-4ef4-8d57-0d6017363fbc" color:border-color="#000000" bpmnElement="_d8ebae94-b358-4fe4-ac16-ace21872a050" targetElement="_2b32c65a-2d20-4057-b2a9-9feee152d349">
+                <di:waypoint x="533.5" y="298"/>
+                <di:waypoint x="592" y="298"/>
+                <di:waypoint x="592" y="376"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_ac79f2b1-5107-4d35-89d8-23fcb77fbe0c" color:border-color="#000000" bpmnElement="_7e964f30-b4eb-496c-a87f-1a068889288b" targetElement="_0012ea4f-638b-42ce-9a8a-3cbdd3b05c7d">
+                <di:waypoint x="717.2867965698242" y="479"/>
+                <di:waypoint x="793.5" y="479"/>
+                <di:waypoint x="793.5" y="452"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_3684192d-28ac-44d1-8c4d-d198f8a6087b" color:border-color="#000000" bpmnElement="_bd10d419-43e8-4d40-b595-f669c3cda795">
+                <di:waypoint x="1159.0735931396484" y="413.78679555654526"/>
+                <di:waypoint x="1230.2867965698242" y="414"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+                    <dc:Bounds height="12.515625" width="110" x="1140.1801926139083" y="418.89489471618356"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_50e10409-1a96-43bf-b3fb-a0b4fd248374" color:border-color="#000000" bpmnElement="_d57e98d6-d471-4bb4-91f7-498a1015aabf" targetElement="_e4f3a27d-0fff-47fa-80b9-35e4097ebc1a">
+                <di:waypoint x="136.5" y="298"/>
+                <di:waypoint x="171.20000000000005" y="298"/>
+                <di:waypoint x="171.20000000000005" y="376"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_0e9d45ae-ec30-4363-8c48-95dbd5ae9167" color:border-color="#000000" bpmnElement="_0dd0ba2b-72cc-4856-b59a-8c6981c38fe0" sourceElement="_79c4b5c3-204b-4741-9b67-52df9aa38844">
+                <di:waypoint x="656.5" y="678"/>
+                <di:waypoint x="656.5" y="722.0121945738792"/>
+                <di:waypoint x="696" y="722.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c03f0b4a-7de0-4dbf-a650-fc198009ec0a" color:border-color="#000000" bpmnElement="_31566b13-36e9-481d-8116-caceda99f291">
+                <di:waypoint x="247" y="186"/>
+                <di:waypoint x="350" y="186"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_bbd5902d-a216-4a62-af61-247c4cfea636" color:border-color="#000000" bpmnElement="_df6810f8-1bf5-48c1-969e-8fe435ecac09" sourceElement="_9fb989fd-927b-498e-bc66-9f650a629af6">
+                <di:waypoint x="216" y="148"/>
+                <di:waypoint x="216" y="71"/>
+                <di:waypoint x="277.5" y="71"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_b4844361-d1a7-434d-a054-634d2d85e63b" color:border-color="#000000" bpmnElement="_526bdea1-d9ea-4696-a212-1c20c4e3160d" targetElement="_f990a92d-76f0-40cc-b17d-91b079aff1aa">
+                <di:waypoint x="311.5" y="71"/>
+                <di:waypoint x="382" y="71"/>
+                <di:waypoint x="382" y="148"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_2ace5b8b-8a64-4f87-a5d9-3e871b053cd8" color:border-color="#000000" bpmnElement="_aa635711-95ca-463c-9e8c-4b6e147758a8">
+                <di:waypoint x="655" y="414"/>
+                <di:waypoint x="745.5" y="414"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_611111bf-4fe8-4fef-ac45-2d27bfa2c393" color:border-color="#000000" bpmnElement="_5f088276-19cd-46ad-8036-70f6ad43c0a1" sourceElement="_2b32c65a-2d20-4057-b2a9-9feee152d349">
+                <di:waypoint x="624" y="376"/>
+                <di:waypoint x="624" y="298"/>
+                <di:waypoint x="684.2867965698242" y="298"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a8822347-8151-488b-a112-962fc43331aa" color:border-color="#000000" bpmnElement="_529e4842-e708-49a2-af7c-51da5dda0d0b" targetElement="_0012ea4f-638b-42ce-9a8a-3cbdd3b05c7d">
+                <di:waypoint x="718.2867965698242" y="298"/>
+                <di:waypoint x="777.5" y="298"/>
+                <di:waypoint x="777.5" y="376"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_bf22b436-b283-4a21-b997-e6757c949491" color:border-color="#000000" bpmnElement="_8a1cb100-978a-4842-a878-913f96610e79" targetElement="_bf970a6a-1290-4d69-bf68-19b9a4f565c6">
+                <di:waypoint x="378.5" y="298"/>
+                <di:waypoint x="426.5" y="298"/>
+                <di:waypoint x="426.5" y="376"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_99e1a3fb-2013-4116-9ee3-c13135b5ca48" color:border-color="#000000" bpmnElement="_5e6eb8f8-b8c1-4df6-9eb8-928b2d14b50c">
+                <di:waypoint x="627" y="186.00508790583558"/>
+                <di:waypoint x="739" y="187"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_979577a5-9102-4313-b506-398f45e7a9f6" color:border-color="#000000" bpmnElement="_5dcc74ac-422b-4043-b571-19b26edd2401" sourceElement="_cdd41b0f-952d-4d71-a89e-8724a5a41617">
+                <di:waypoint x="596" y="149.00508790583558"/>
+                <di:waypoint x="596" y="71"/>
+                <di:waypoint x="644.5" y="71"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_71a7f291-816e-48d9-b0fb-dfb5e5bbbb70" color:border-color="#000000" bpmnElement="_7b7bdb0c-e55b-41a1-b11e-9e5b2b66ec10" sourceElement="_4cef4e55-cd0c-459c-8f4e-10c04aa7f61f">
+                <di:waypoint x="983" y="375"/>
+                <di:waypoint x="983" y="298"/>
+                <di:waypoint x="1033.5" y="298"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a0387408-5362-4af0-9fa4-10511b52dd49" color:border-color="#000000" bpmnElement="_a3613ae7-c34c-42ac-b644-067e531b9ecb">
+                <di:waypoint x="1014" y="413"/>
+                <di:waypoint x="1117.5" y="414"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_485663db-334f-4160-a320-4b57e741134d" color:border-color="#000000" bpmnElement="_47c03254-10ad-42a2-9256-df1d89a7ac16">
+                <di:waypoint x="840.5" y="414"/>
+                <di:waypoint x="919" y="413"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_0081313a-7a70-4273-80f2-948bda55ccc6" color:border-color="#000000" bpmnElement="_a53ac577-744a-4524-81a1-1836a1c9c452">
+                <di:waypoint x="1138.5" y="434.01219457387924"/>
+                <di:waypoint x="1138.5" y="537.2849223392069"/>
+                <di:waypoint x="200" y="537.2849223392069"/>
+                <di:waypoint x="200" y="602"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.296875" width="110" x="614.25" y="542.2849223392069"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_eb67abc0-948f-410a-ad19-a8c0ca3e0f13" color:border-color="#000000" bpmnElement="_0ecf5bc2-981b-4480-900e-a0ddd34e90a3" targetElement="_23ae9dbe-fb6a-453a-88b2-e0271388cac8">
+                <di:waypoint x="135.5" y="547"/>
+                <di:waypoint x="171.2" y="547"/>
+                <di:waypoint x="171.2" y="602"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_252ade3d-f4a2-43b8-8de0-e0895df3ad3d" color:border-color="#000000" bpmnElement="_c496fd9a-661f-4ce7-9e51-e82197fdd8b1">
+                <di:waypoint x="247" y="640"/>
+                <di:waypoint x="295.5" y="640"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_0b54bbe8-dd77-433e-8828-b147a778d78e" color:border-color="#000000" bpmnElement="_84943a03-886a-4e92-ab02-ec7d3417e9f3">
+                <di:waypoint x="507" y="660.0121945738792"/>
+                <di:waypoint x="506.7867965698242" y="814"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+                    <dc:Bounds height="12.515625" width="110" x="451.8933982849121" y="742.0060972869396"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_23d3fc93-6e87-4c48-8692-6cfc7b416fb2" color:border-color="#000000" bpmnElement="_8f584514-260e-429e-a726-9eac04546ead">
+                <di:waypoint x="527.5735931396484" y="639.7867955565453"/>
+                <di:waypoint x="592.5" y="639.9988080888876"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="505.0367965698242" y="644.8928018227164"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_ef471a57-e819-47db-a254-5d8afa1cb19f" color:border-color="#000000" bpmnElement="_282edbe7-800a-4e1c-92cc-d50c1538a186">
+                <di:waypoint x="687.5" y="640"/>
+                <di:waypoint x="760" y="640"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_9335aad5-c5fe-4a4b-8863-c464292ec1c4" color:border-color="#000000" bpmnElement="_67cfbe8d-0e1a-447b-897a-c83e895bbc69">
+                <di:waypoint x="1025.5" y="639.7867955565453"/>
+                <di:waypoint x="1140.0735931396484" y="640"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="1027.286797435514" y="644.8924673541301"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_9977a94c-d361-4b9f-a730-13f9af74ad95" color:border-color="#000000" bpmnElement="_1c25e58f-1aaa-406a-8d48-914eaeaf6e8d">
+                <di:waypoint x="1004.5" y="660.7867955565453"/>
+                <di:waypoint x="1004.2867965698242" y="735.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+                    <dc:Bounds height="12.515625" width="110" x="949.3948344681694" y="702.3994971278389"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_2a6f4319-fb2e-40f7-8c82-ab0be730c994" color:border-color="#000000" bpmnElement="_0e588afa-2e72-499a-9870-d72fb8e7f893">
+                <di:waypoint x="854" y="640"/>
+                <di:waypoint x="983.5" y="640"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_8a85b059-f06b-4332-8507-c0ca36000a2d" color:border-color="#000000" bpmnElement="_c5b39528-b2a4-4e62-940d-ee6ed4e1c83e">
+                <di:waypoint x="389.5" y="640"/>
+                <di:waypoint x="486" y="640"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_ce488206-eaff-4856-aff7-4742dc0cb0fd" color:border-color="#000000" bpmnElement="_c5f553db-7f44-4f53-a827-18e220411c87" sourceElement="_f990a92d-76f0-40cc-b17d-91b079aff1aa">
+                <di:waypoint x="414" y="148"/>
+                <di:waypoint x="414" y="71"/>
+                <di:waypoint x="471" y="71"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_e0ad5362-27aa-4c0b-89e0-2dbc98b52fae" color:border-color="#000000" bpmnElement="_dc7d9f99-82d9-46ea-b664-724196811c7d" targetElement="_cdd41b0f-952d-4d71-a89e-8724a5a41617">
+                <di:waypoint x="504" y="71"/>
+                <di:waypoint x="564" y="71"/>
+                <di:waypoint x="564" y="148.00508790583558"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a6d0294b-b1ab-4e8d-a2f8-e96f7d0b2bf2" color:border-color="#000000" bpmnElement="_2f62dae8-379f-4fc8-8b34-8332996f2a4a" targetElement="_851d3d4b-fd86-4add-a5fb-5975c8d3340a">
+                <di:waypoint x="729" y="722.0121945738792"/>
+                <di:waypoint x="778.2" y="722.0121945738792"/>
+                <di:waypoint x="778.2" y="678"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_cc77f555-759b-415f-b691-717188df3092" color:border-color="#000000" bpmnElement="_6e4b9954-e496-4343-bcbd-aff5d6dceab4" sourceElement="_851d3d4b-fd86-4add-a5fb-5975c8d3340a">
+                <di:waypoint x="823" y="678"/>
+                <di:waypoint x="823" y="722.0121945738792"/>
+                <di:waypoint x="857.5" y="722.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_8aed07bd-1589-49a7-b324-451eb845aefd" color:border-color="#000000" bpmnElement="_e030afdc-de1f-4511-ae8e-fa96f7336078" sourceElement="_23ae9dbe-fb6a-453a-88b2-e0271388cac8">
+                <di:waypoint x="216" y="678"/>
+                <di:waypoint x="216" y="722.0121945738792"/>
+                <di:waypoint x="253" y="722.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c22d0cb5-ec9d-452e-b5c0-24661d26abe3" color:border-color="#000000" bpmnElement="_5f1bae07-99ad-4497-ab4d-1d83d128aac9">
+                <di:waypoint x="1051.2867965698242" y="773.0121945738792"/>
+                <di:waypoint x="1167.2867965698242" y="773.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_8de4be05-eac9-4a84-bc0f-9d5b96883011" color:border-color="#000000" bpmnElement="_5c717f4d-b9d0-4d6c-abc8-ac77631af4bc">
+                <di:waypoint x="1188.0735931396484" y="677"/>
+                <di:waypoint x="1188.0735931396484" y="753"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_dbf0b141-cdb7-4a1a-bd03-16baa2f67c48" color:border-color="#000000" bpmnElement="_fddc8ebd-bffb-497f-a62f-087d8920ae34">
+                <di:waypoint x="553.7867965698242" y="852"/>
+                <di:waypoint x="1188.2867965698242" y="852"/>
+                <di:waypoint x="1188.2867965698242" y="793.0243891477585"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a4d5d0d0-585c-4441-bedc-9ccab11167c4" color:border-color="#000000" bpmnElement="_91be3ee8-7417-4840-b532-7224f8bc9060">
+                <di:waypoint x="1209.2867965698242" y="772.7989901304245"/>
+                <di:waypoint x="1299.8603897094727" y="772.7989901304245"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a4f05664-a432-457b-92a7-793f4f0f0c08" color:border-color="#000000" bpmnElement="_f2070857-f8e7-4d01-9646-51a5e5f13789" targetElement="_965b6873-b76b-443d-a16f-16313699d5de">
+                <di:waypoint x="286" y="722.0121945738792"/>
+                <di:waypoint x="326.5" y="722.0121945738792"/>
+                <di:waypoint x="326.5" y="678"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_2e7f1271-b34f-4778-9784-95bef362c6df" color:border-color="#000000" bpmnElement="_11dc5586-dfe4-4e9d-9cb7-2b2dd874e9bf" sourceElement="_965b6873-b76b-443d-a16f-16313699d5de">
+                <di:waypoint x="358.5" y="678"/>
+                <di:waypoint x="358.5" y="722.0121945738792"/>
+                <di:waypoint x="394.5" y="722.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_98a84622-c209-4305-9f3d-761f28051284" color:border-color="#000000" bpmnElement="_5363bc81-9e70-4659-923b-bc6c540b338a" targetElement="_79c4b5c3-204b-4741-9b67-52df9aa38844">
+                <di:waypoint x="579" y="722.0121945738792"/>
+                <di:waypoint x="624.5" y="722.0121945738792"/>
+                <di:waypoint x="624.5" y="678"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_54b27e5a-e553-4e16-bb63-b60235c4285c" color:border-color="#000000" bpmnElement="_05b303ed-923d-447d-a673-982d90912672">
+                <di:waypoint x="597.5" y="1107.0121945738792"/>
+                <di:waypoint x="676" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_f873a4e5-cb0f-49b7-852c-496ca9a026ac" color:border-color="#000000" bpmnElement="_c9a5a8ef-f340-40ed-b745-e1bd1a7a5a14" sourceElement="_c5d4e611-7700-4287-980d-9c785c318930">
+                <di:waypoint x="740" y="1069.0121945738792"/>
+                <di:waypoint x="740" y="989"/>
+                <di:waypoint x="790.5" y="989"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_496c6a93-903d-4780-9f5e-44ed7c843600" color:border-color="#000000" bpmnElement="_f1e5715b-575a-4e05-b421-556ffa99520e" targetElement="_ba37d7f1-40e1-4920-adf5-d204fe21c813">
+                <di:waypoint x="135.5" y="989"/>
+                <di:waypoint x="183.5" y="989"/>
+                <di:waypoint x="183.5" y="1069.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c6dba09d-58a4-467b-a3af-2a73d57656a4" color:border-color="#000000" bpmnElement="_dc1e2107-b8e8-40fe-b353-d8a9d7e1396e" targetElement="_382e33f0-d52d-403f-b04d-d2f25983d219">
+                <di:waypoint x="475" y="989"/>
+                <di:waypoint x="534.5" y="989"/>
+                <di:waypoint x="534.5" y="1069.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_b0003912-fd14-4977-806f-fa7f051e7499" color:border-color="#000000" bpmnElement="_a826a6c3-6b33-412c-afce-775422813e7d" sourceElement="_e1543c93-5536-4fba-a102-822ef8abe7d1">
+                <di:waypoint x="382" y="1069.0121945738792"/>
+                <di:waypoint x="382" y="989"/>
+                <di:waypoint x="441" y="989"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c408da5d-2239-4c59-b44e-c91150b24f3a" color:border-color="#000000" bpmnElement="_f222348d-f5a2-4475-8c9d-4d7cb50216f3">
+                <di:waypoint x="413" y="1107.0121945738792"/>
+                <di:waypoint x="502.5" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_0881b34c-467e-4a95-8893-959b0f18dd36" color:border-color="#000000" bpmnElement="_98f4471f-3706-4215-9107-3e2e1972e6bd" targetElement="_382e33f0-d52d-403f-b04d-d2f25983d219">
+                <di:waypoint x="462.5" y="1200"/>
+                <di:waypoint x="550.5" y="1200"/>
+                <di:waypoint x="550.5" y="1145.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_3dcbff07-ade8-425b-a626-2871da52bdd9" color:border-color="#000000" bpmnElement="_fb0fea44-878d-4d38-a24d-86306c4d3812" targetElement="_e1543c93-5536-4fba-a102-822ef8abe7d1">
+                <di:waypoint x="290.5" y="989"/>
+                <di:waypoint x="350" y="989"/>
+                <di:waypoint x="350" y="1069.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_56c24682-8901-4d9e-ab87-91529d27b822" color:border-color="#000000" bpmnElement="_010b015d-ce6f-4996-a41b-6485dd19ccb4" sourceElement="_ba37d7f1-40e1-4920-adf5-d204fe21c813">
+                <di:waypoint x="215.5" y="1069.0121945738792"/>
+                <di:waypoint x="215.5" y="989"/>
+                <di:waypoint x="257.5" y="989"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c37696c1-042d-48b9-a89d-1faa8a200d71" color:border-color="#000000" bpmnElement="_1686c206-54a4-4c06-9820-703d4242f5a2">
+                <di:waypoint x="246.5" y="1107.0121945738792"/>
+                <di:waypoint x="319" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_f14f681f-5bad-41e4-b3a2-6226fd2857e7" color:border-color="#000000" bpmnElement="_05564a5a-88fc-4e61-9cd2-8d03d1440b98">
+                <di:waypoint x="1502.8603897094727" y="791.0121945738792"/>
+                <di:waypoint x="1502.8603897094727" y="930.0121945738792"/>
+                <di:waypoint x="199.5" y="930.0121945738792"/>
+                <di:waypoint x="199.5" y="1069.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_d4755252-651c-4839-b414-d1abff3bd4f2" color:border-color="#000000" bpmnElement="_d709ac29-c2e5-46ce-a8c9-035630a9142e">
+                <di:waypoint x="771" y="1107.0121945738792"/>
+                <di:waypoint x="867" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c04a00a7-786f-4f82-ac21-516cd43b1483" color:border-color="#000000" bpmnElement="_d3f63b8c-8976-4b14-96b5-18cf47952b03">
+                <di:waypoint x="888" y="1127.7989901304245"/>
+                <di:waypoint x="887.7867965698242" y="1182.0243891477585"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+                    <dc:Bounds height="12.515625" width="110" x="832.8933982849121" y="1159.9116896390915"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_82f1ef07-7f68-4b6f-b8f7-638c70aba399" color:border-color="#000000" bpmnElement="_4dfe082f-3793-4618-8b7f-dca543cfa347">
+                <di:waypoint x="909" y="1106.7989901304245"/>
+                <di:waypoint x="983.5" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+                    <dc:Bounds height="12.515625" width="110" x="890.7500020474688" y="1111.9041614557063"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_42976625-e6dd-4f3c-a85a-33543ccafdd5" color:border-color="#000000" bpmnElement="_abcf9459-34c6-43d5-be70-b48e4722298c">
+                <di:waypoint x="1078.5" y="1107.0121945738792"/>
+                <di:waypoint x="1134.5" y="1107.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_5e7cddb4-db9f-4676-8f92-0db8c24cb487" color:border-color="#000000" bpmnElement="_cabbf17b-77f1-46da-9222-47ba2363231c" sourceElement="_0012ea4f-638b-42ce-9a8a-3cbdd3b05c7d">
+                <di:waypoint x="809.5" y="376"/>
+                <di:waypoint x="809.5" y="298"/>
+                <di:waypoint x="857.5" y="298"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_4839e69e-139a-49d6-9fc8-746634601f85" color:border-color="#000000" bpmnElement="_f4cdea6c-5708-49c8-9f04-6d0ac2f2304e" targetElement="_4cef4e55-cd0c-459c-8f4e-10c04aa7f61f">
+                <di:waypoint x="890.5" y="298"/>
+                <di:waypoint x="951" y="298"/>
+                <di:waypoint x="951" y="375"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a2c0dad6-c3d5-4fdf-b43b-dfdf9b8e83b3" color:border-color="#000000" bpmnElement="_ab806c2a-e6b5-42fd-b3f8-680786d4be8c" sourceElement="_382e33f0-d52d-403f-b04d-d2f25983d219">
+                <di:waypoint x="566.5" y="1069.0121945738792"/>
+                <di:waypoint x="566.5" y="989"/>
+                <di:waypoint x="622" y="989"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_bcb9201a-5e27-4c96-9d3f-95b76dd321b7" color:border-color="#000000" bpmnElement="_159abec9-59ee-4e82-a647-9a91160b722e" targetElement="_c5d4e611-7700-4287-980d-9c785c318930">
+                <di:waypoint x="655" y="989"/>
+                <di:waypoint x="708" y="989"/>
+                <di:waypoint x="708" y="1069.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_fa958cb5-a51e-4201-a2bf-b72928b3711e" color:border-color="#000000" bpmnElement="_0f55ee99-9478-4ab8-b904-8495b3cb4472">
+                <di:waypoint x="1393.8603897094727" y="772.7989901304245"/>
+                <di:waypoint x="1484.8603897094727" y="773.0121945738792"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+        <bpmndi:BPMNLabelStyle id="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_0">
+            <dc:Font name="arial,helvetica,sans-serif" size="11" isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false"/>
+        </bpmndi:BPMNLabelStyle>
+        <bpmndi:BPMNLabelStyle id="LS_25439b4d-b36d-47b5-9a73-cb91223b5417_1">
+            <dc:Font name="arial,helvetica,sans-serif" size="11" isBold="true" isItalic="false" isStrikeThrough="false" isUnderline="false"/>
+        </bpmndi:BPMNLabelStyle>
+    </bpmndi:BPMNDiagram>
+    <bpmndi:BPMNDiagram id="_c3467887-a0d2-4d85-a61b-f870a18fd270" name="Prescribe Stage 1 Drugs">
+        <bpmndi:BPMNPlane bpmnElement="_a91ae9ad-1cc0-43e0-a06a-292b18778298" id="_c3467887-a0d2-4d85-a61b-f870a18fd270_plane" trisobpmn:diagramWidth="1485" trisobpmn:diagramHeight="1050">
+            <bpmndi:BPMNShape id="_b827d425-03db-4067-a40f-f24c5afc43f8" bpmnElement="_dc950ae3-8327-4686-ab4b-a66239595563" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="161" y="356" width="32" height="32"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_e2bf6416-3c63-46f7-8e93-e8a1eca77576_di" bpmnElement="_e2bf6416-3c63-46f7-8e93-e8a1eca77576" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="349" y="480.5" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="12.515625" width="94.78125" x="318.609375" y="525.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_60ee784b-001f-4bfd-83e2-239468ea473c" bpmnElement="_2ef5f3c1-ae42-420a-97b8-553b83370a8a" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="401" y="334" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="56" width="89" x="404.5" y="344"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_cc11b47b-eaa6-4496-821b-282f30a0c9ef_di" bpmnElement="_cc11b47b-eaa6-4496-821b-282f30a0c9ef" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="349" y="167.5" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="12.515625" width="60.5625" x="335.71875" y="212.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_a6ebea89-abf9-4005-9e82-e0c3a425d185" bpmnElement="_2b70664e-e7f6-4207-ae3e-2f3e6f472f91" isMarkerVisible="false" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="248" y="351.98780542612076" width="41.57359313964844" height="40.024389147758484"/>
+                <bpmndi:BPMNLabel color:color="#000000" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="12.515625" width="99.6875" x="168.15625" y="330.78679555654526"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_27855930-892b-4938-b258-d93a01b03e43" bpmnElement="_9a4506a1-aa55-429d-bd1a-c07e10fecfed" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="250.78679656982422" y="447.01219457387924" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="27.015625" width="103.34375" x="217.11492156982422" y="493.01219457387924"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_2daedb65-e349-465f-b866-c930ffe08fb7" bpmnElement="_a8829cb3-6843-4ea6-8af2-e027ae7dd626" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="578" y="334" width="96" height="76"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="27" width="89" x="581.5" y="358.5"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_f9adce99-f231-49af-a526-10c96e6bb5d8_di" bpmnElement="_f9adce99-f231-49af-a526-10c96e6bb5d8" color:background-color="#CCFFFF" color:border-color="#000000">
+                <dc:Bounds x="517" y="263" width="34" height="40"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="12.515625" width="102.125" x="482.9375" y="308"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="_af16799a-3975-4de6-855b-ad6398a93aef" bpmnElement="_69e374e8-5fc7-466e-86e5-0e3ddac9f026" color:background-color="#ffffff" color:border-color="#000000">
+                <dc:Bounds x="729" y="354" width="36" height="36"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="27.015625" width="58.71875" x="717.640625" y="400"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge id="_0fc06207-98d2-4ec1-afc5-c8dc3f2e1c03" color:border-color="#000000" bpmnElement="_e8cef819-5b90-4a16-ae5d-06866944daf3" targetElement="_60ee784b-001f-4bfd-83e2-239468ea473c">
+                <di:waypoint x="382" y="500.5"/>
+                <di:waypoint x="433" y="500.5"/>
+                <di:waypoint x="433" y="410"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_a1724ab3-9df9-451f-af8c-3dc3f7e6dd82" color:border-color="#000000" bpmnElement="_a197dab5-9e16-439e-892c-c6612438d8b2" targetElement="_60ee784b-001f-4bfd-83e2-239468ea473c">
+                <di:waypoint x="382" y="199.5"/>
+                <di:waypoint x="433" y="199.5"/>
+                <di:waypoint x="433" y="334"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_eb4523b8-d265-4f8b-83e6-cbbff834753b" color:border-color="#000000" bpmnElement="_0f265003-d4e0-4902-b716-c9c211b4a876">
+                <di:waypoint x="192" y="372"/>
+                <di:waypoint x="248" y="372"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_6152ba72-53c8-4260-b441-946f14659846" color:border-color="#000000" bpmnElement="_c841c2fb-5bd7-452a-a779-cda71388b8db">
+                <di:waypoint x="269" y="392.78679555654526"/>
+                <di:waypoint x="268.7867965698242" y="447.01219457387924"/>
+                <bpmndi:BPMNLabel color:color="#0000FF" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_1">
+                    <dc:Bounds height="12.515625" width="19" x="259.3933982849121" y="424.89949506521225"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_86d33fff-3763-4f91-9d75-ea348825b6bd" color:border-color="#000000" bpmnElement="_5cfa3222-436b-4b30-91bb-382307c24426">
+                <di:waypoint x="290" y="371.78679555654526"/>
+                <di:waypoint x="401" y="372"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+                    <dc:Bounds height="12.515625" width="110" x="290.5" y="376.89339777827263"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_8f72bc20-ad49-4cf1-a80f-3f7593fb02a2" color:border-color="#000000" bpmnElement="_a00cecac-d6c6-4e27-ab39-ebd33ff993cb">
+                <di:waypoint x="496" y="372"/>
+                <di:waypoint x="578" y="372"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_84462968-b80b-4e20-80c6-cb92bedde359" color:border-color="#000000" bpmnElement="_e8b99a36-cbae-416e-b93e-1bd70c9978c0" targetElement="_2daedb65-e349-465f-b866-c930ffe08fb7">
+                <di:waypoint x="382" y="187.5"/>
+                <di:waypoint x="626" y="187.5"/>
+                <di:waypoint x="626" y="334"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_f993244b-35e9-4288-bcf4-467b0e82a100" color:border-color="#000000" bpmnElement="_10f3ec9e-f0e9-47a8-a591-23a64233e2db" targetElement="_2daedb65-e349-465f-b866-c930ffe08fb7">
+                <di:waypoint x="550" y="283"/>
+                <di:waypoint x="610" y="283"/>
+                <di:waypoint x="610" y="334"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_c80eeff2-53c9-4d08-ac3d-425a208732c2" color:border-color="#000000" bpmnElement="_94e74d53-dda0-47aa-bd06-ff078aba3f06" sourceElement="_60ee784b-001f-4bfd-83e2-239468ea473c">
+                <di:waypoint x="465" y="334"/>
+                <di:waypoint x="465" y="283"/>
+                <di:waypoint x="517" y="283"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="_014e7efb-91c7-4468-bf8a-e4bc1774d932" color:border-color="#000000" bpmnElement="_8b4176da-1846-49a0-834d-f7dab6cf1dd6">
+                <di:waypoint x="673" y="372"/>
+                <di:waypoint x="729" y="372"/>
+                <bpmndi:BPMNLabel color:color="#000000" triso:defaultBounds="true" triso:labelPosition="midbottom" labelStyle="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+        <bpmndi:BPMNLabelStyle id="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_0">
+            <dc:Font name="arial,helvetica,sans-serif" size="11" isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false"/>
+        </bpmndi:BPMNLabelStyle>
+        <bpmndi:BPMNLabelStyle id="LS_c3467887-a0d2-4d85-a61b-f870a18fd270_1">
+            <dc:Font name="arial,helvetica,sans-serif" size="11" isBold="true" isItalic="false" isStrikeThrough="false" isUnderline="false"/>
+        </bpmndi:BPMNLabelStyle>
+    </bpmndi:BPMNDiagram>
+    <semantic:relationship type="trisoExtension">
+        <semantic:extensionElements>
+            <triso:itemDefinitions>
+                <triso:itemDefinition name="tVitalSignsMeasurements" label="tVitalSignsMeasurements" isCollection="false">
+                    <triso:itemComponent id="_3a81a568-882e-44e3-9350-706e0903f9ff" name="Blood Pressure" isCollection="false">
+                        <triso:typeRef>tBlood_Pressure</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_4b46bd14-00b9-426f-98fd-28b5468555e4" name="Temperature" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_e5376d6b-a1c4-4661-9ae4-35c657169386" name="Heart Rate" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_5c2f1e3a-5983-489b-8c13-60596380aba3" name="Weight" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_049f5760-f162-4cc5-9ac3-805b5ec28220" name="Date of Collection" isCollection="false">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBlood_Pressure" label="tBlood_Pressure" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tBloodPressure" name="Hello Patient Decisions3 - tBloodPressure" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_00b4eadc-e4d3-475a-9a24-079f859d9bd8"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_f2012965-0e56-4b7d-802e-2566e5a965a2" name="Systolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[60..250]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_34d76a69-7064-4c78-88bf-05895f1e6cf7" name="Diastolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[20..150]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tPatientData" label="tPatientData" isCollection="false">
+                    <triso:itemComponent id="_c9cd14f9-0468-4540-a978-e5428125979b" name="Patient Name" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_acd18db6-60f4-42fa-8c83-77cc2c089164" name="Demographics" isCollection="false">
+                        <triso:typeRef>tDemographics</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_025de6e5-e8a2-4139-8277-9b645cbff5af" name="Health Conditions" isCollection="false">
+                        <triso:typeRef>tHealthConditions</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_38892d8d-3f58-4ec0-a45d-459edcd40f39" name="Medication Tolerances" isCollection="false">
+                        <triso:typeRef>tMedicationTolerances</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_62f6055a-55a6-462b-b674-5fac2da4b5c4" name="Prescriptions">
+                        <triso:itemComponent id="_5c52dbd5-ca30-4475-ac2f-29dac0d8fddf" name="ACE-I">
+                            <triso:typeRef>tPrescriptions</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_2f4422f6-48ba-4ae2-baf0-1101e833b0c4" name="ARB">
+                            <triso:typeRef>tPrescriptions</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_72ead2fa-91a8-423a-8b2c-dd8b8f5fa09b" name="Vital Signs and Measurements" isCollection="true">
+                        <triso:typeRef>tVitalSignsMeasurements</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tDemographics" label="tDemographics" isCollection="false">
+                    <triso:itemComponent id="_978f696d-c2a1-4de2-99db-b3b588a2bbb7" name="Age" isCollection="false">
+                        <triso:typeRef>yearMonthDuration</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_b9770da3-23d9-4c6b-b6ff-a0885a41cb4e" name="Date Of Birth" isCollection="false">
+                        <triso:typeRef>date</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_9aa5655b-5cc1-4dce-a94b-e1a852972ae1" name="Sex" isCollection="false">
+                        <triso:typeRef>tSex</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_545ff51f-5731-441c-ab2c-9479660b97db" name="Ethnicity" isCollection="true">
+                        <triso:typeRef>tEthnicity</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_271d0f7c-eec1-4225-aad9-783c4c947b70" name="State of Residence" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tSex" label="tSex" isCollection="false">
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Male","Female","Undetermined","Declined to State"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tEthnicity" label="tEthnicity" isCollection="false">
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"African","Asian","Caucasian","Hispanic","Native American","Pacific Islander","Decline to State"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tAppointment" label="tAppointment" isCollection="false">
+                    <triso:itemComponent id="_4164540c-7968-4329-9ce7-03fb6e74af1d" name="Appointment Date" isCollection="false">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_96fb1faf-7cca-49c4-af2b-66a8b916004c" name="Appointment Purpose" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_ccd657f0-b7ed-499f-b4e2-b3691cc357fa" name="Appointment Status" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"Completed","Missed","Scheduled","Late","In Progress"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tEncounter" label="tEncounter" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tAppointment" name="Hello Patient Decisions3 - tAppointment" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_d1f823e6-5066-408e-8a6e-2f65efd146bd"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_1baff0d5-a2b7-42b4-a77b-86262639ab4f" name="Encounter Date" isCollection="false">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_f14ae2e7-14b0-4e95-bff0-6ff3dfa0e916" name="Vital Signs and Measurements" isCollection="false">
+                        <triso:typeRef>tVital_Signs_and_Measurments</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_c33dc4ad-24a8-4fb6-8edc-4ee8c6cf01c1" name="Exam Data" isCollection="false">
+                        <triso:typeRef>tExamData</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_9d1b9ed3-fe59-462f-b4a7-00bad5f32bc2" name="Weight Counseling Referral Choice" isCollection="false">
+                        <triso:typeRef>tWeightCounselingReferral</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_a5f67115-1fe1-402b-bb9c-b65da7a1d7a5" name="Treatment Plan" isCollection="false">
+                        <triso:typeRef>tTreatmentPlanType</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tVital_Signs_and_Measurments" label="tVital_Signs_and_Measurments" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tVitalSignsMeasurments" name="Hello Patient Decisions3 - tVitalSignsMeasurments" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_feb63b00-6990-4ba2-b8ba-d093122c30f7"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_d4c6c238-583e-4a19-a875-cc20c0e12f89" name="Blood Pressure" isCollection="false">
+                        <triso:typeRef>tBlood_Pressure</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_235ed56d-98c8-4ef6-a360-f6b994fdcd1b" name="Temperature" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_6c3aa433-7c95-4378-a982-8ac8d911a9d7" name="Heart Rate" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_0dc36b14-da17-4cc2-98a9-1fdb08378b17" name="Weight" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_8c44eb42-92c0-4019-962f-36e4e988a9a7" name="Date Collected" isCollection="false">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tExamData" label="tExamData" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tExamData" name="Hello Patient Decisions3 - tExamData" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_9964135f-e95e-4db5-a712-02bdf76f9813"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_e53b854b-f1f2-482e-b2bb-263fba7ddc8e" name="Screening Questions" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_ba4f44b9-005e-47ad-8acb-875c693e830c" name="Patient Complaints" isCollection="false">
+                        <triso:typeRef>tPatientComplaints</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_e396dfd5-873b-47e6-98e7-6a1397ac59c0" name="Pain Rating" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[1..10]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_b8f58b3b-c782-4422-95d9-3fb4e5898684" name="Lung Evaluation" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"Normal","Other"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_1dd7f83e-b02c-4149-bdbe-e4eb951933e5" name="Abdominal Evaluation" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"Normal","Other"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_20f023b0-b4d7-4fb2-87a9-f042231375da" name="Heart Evaluation" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"Normal","Other"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_993a0bd3-550e-4276-ba07-c18063bfe6b0" name="Extremities Evaluation" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"Normal","Other"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_408d8dac-1b3a-4b8b-91fd-fe185c941e1c" name="Blood Pressure Rating" isCollection="false">
+                        <triso:typeRef>tBloodPressureStage</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_c422fe21-6f52-4955-a2ed-3352d0635a54" name="BMI Category" isCollection="false">
+                        <triso:typeRef>tBMICategory</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_4f159406-acc3-4a8f-99a5-2eaa08e84807" name="Exam Notes" isCollection="false">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tPatientComplaints" label="tPatientComplaints" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tPatientComplaints" name="Hello Patient Decisions3 - tPatientComplaints" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_aace17d7-94fb-4f53-8c1a-ba83e4d87002"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Headache","Sore Throat","Backache","Vision Problems","Joint Pain","Diarrhea","Constipation","Bleeding","Nausea or Vomiting","Fainting","Abdominal Pain","Other"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBMICategory" label="tBMICategory" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tBMICategory" name="Hello Patient Decisions3 - tBMICategory" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_a3112463-6065-400f-ad7d-a8418e5d01b7"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Underweight","Normal Weight","Overweight","Obese"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tWeightCounselingReferral" label="tWeightCounselingReferral" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tWeightCounselingReferral" name="Hello Patient Decisions3 - tWeightCounselingReferral" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_0e8a42ff-4e36-47bf-aa98-5c115b18d54b"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Yes","No"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tTreatmentPlanType" label="tTreatmentPlanType" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b#tTreatmentPlanType" name="Hello Patient Decisions3 - tTreatmentPlanType" modelURI="http://www.trisotech.com/definitions/_1fdd6280-e589-48b8-b731-73bae3b0313b" id="_e148d889-383c-4c41-8016-86b164517cdf"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Check Out","Provide Referral","Send to Hospital","Order Medications"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tHealthConditions" label="tHealthConditions" isCollection="false">
+                    <triso:itemComponent id="_75d1e94f-b64e-4bad-b190-d6195d231891" name="Chronic Kidney Disease" isCollection="false">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_d5e2f4d2-35c3-421f-9e4e-fb0759155984" name="Diabetes" isCollection="false">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_7222eb09-5b95-43a0-acf8-4d7da191b4a4" name="Heart Failure" isCollection="false">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_4ae6d9ea-216c-4f8f-ac7c-ce049784cc7f" name="Hypertension" isCollection="false">
+                        <triso:itemComponent id="_a4bd1975-c883-4703-a7ff-b85a7a47b33b" name="Condition" isCollection="false">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_ad0293dd-1773-47d8-8c55-48b6d57728dc" name="Stage" isCollection="false">
+                            <triso:typeRef>tBloodPressureStage</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_a64e1287-57bf-4804-b26c-c6c0731f0914" name="Compelling Indications" isCollection="false">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_f8c7bde4-4a78-49de-8ee5-a3d7f3e3db0e" name="Goal Met" isCollection="false">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_2b3c52f2-dd19-4cae-b98c-ff7bb0a9f42d" name="Vascular Disease" isCollection="false">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_d9e78033-5753-471a-a045-8b61fc13f656" name="Pregnancy">
+                        <triso:itemComponent id="_bf1d3cf0-daf1-465a-8103-f2008b1286a8" name="Currently Pregnant">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_c91bebed-6086-4d54-ac69-c4784b9d8bfa" name="Previous Pregnancies">
+                            <triso:typeRef>number</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tMedicationTolerances" label="tMedicationTolerances" isCollection="false">
+                    <triso:itemComponent id="_50e2633e-e99f-4e00-a7b2-0d88a4b0a941" name="Anithypertensive" isCollection="false">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tHealthGoals" label="tHealthGoals" isCollection="false">
+                    <triso:itemComponent id="_1e5fb090-7996-4bc0-9042-38c37a77a7ce" name="Blood Pressure Goals" isCollection="false">
+                        <triso:typeRef>tBloodPressureGoal</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBloodPressureGoal" label="tBloodPressureGoal" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink uri="http://www.trisotech.com/definitions/_264fd852-5869-4639-9145-ac921b43c3dc#tBloodPressureGoal" name="tBloodPressureGoal" id="_2fb2c507-37d8-431e-8a6e-b01a65684210"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Goal 1","Goal 2","Goal 3","No Goal"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBloodPressureStage" label="tBloodPressureStage" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_0e313921-e3cb-4461-8dcf-4123cda6e216" name="tBloodPressureRating" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#tBloodPressureRating"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Hypertensive Emergency","Stage 2 High","Stage 1 High","Elevated","Normal"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tBloodPressureRating" label="Hypertension Decisions.tBloodPressureRating" isCollection="false">
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Hypertensive Emergency","Stage 2 High","Stage 1 High","Elevated","Normal"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tVitalSignsMeasurments" label="Hypertension Decisions.tVitalSignsMeasurments" isCollection="false">
+                    <triso:itemComponent id="_638b376c-e0de-40cf-b4f9-8513f1933fdf" name="Blood Pressure" isCollection="false">
+                        <triso:typeRef>Hypertension_Decisions.tBloodPressure</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_2403b729-5cdc-4c12-9c28-b7171e893adb" name="Temperature" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_3e2b9a34-ff4f-4072-ac1d-0bf6af895b9a" name="Heart Rate" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_d25557a1-fa20-4799-966b-542a40fc46c1" name="Weight" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_6c756e0d-9c7a-4c3a-9814-9bb5279c691a" name="Date of Collection" isCollection="false">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tBloodPressure" label="Hypertension Decisions.tBloodPressure" isCollection="false">
+                    <triso:itemComponent id="_6f0cd73b-2eec-4abf-ac51-c9c3f52e99b2" name="Systolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[60..250]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_77a21e6e-edba-4dd6-8f75-9fb4b40a8a3b" name="Diastolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[20..150]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tHypertensionResult" label="tHypertensionResult" isCollection="false">
+                    <triso:typeRef>boolean</triso:typeRef>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tCompellingIndicationsResult" label="tCompellingIndicationsResult" isCollection="false">
+                    <triso:typeRef>boolean</triso:typeRef>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBloodPressureGoalResult" label="tBloodPressureGoalResult" isCollection="false">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_02d9408a-3208-4321-81a5-e91d064a35cc" name="tBloodPressureGoalResult" uri="http://www.trisotech.com/definitions/_44c0c078-9936-4c50-807e-5d5e21fa2436#tBloodPressureGoalResult"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>boolean</triso:typeRef>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tBloodPressureGoals" label="tBloodPressureGoals" isCollection="false">
+                    <triso:itemComponent id="_a4ed9e05-45c3-49c5-9baf-d0f30764f314" name="Normal Systolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_3fa4698e-3678-41ea-a929-0d4e10ad92c2" name="Normal Diastolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_142a7921-6e1e-42f7-b554-3538339ef1f2" name="Condition Systolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_ee3f6d36-646a-48b8-9649-144fa472cd15" name="Condition Diastolic" isCollection="false">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tPrescriptions" label="tPrescriptions">
+                    <triso:itemComponent id="_21582e23-b79e-4011-8fd4-51b252679be4" name="Name">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_917f5b9d-c4ad-46ca-bfc2-99d46d27ebd1" name="Active">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_78878371-6302-43af-af15-d5a5d1cb6c08" name="Previous">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tPreferences" label="tPreferences">
+                    <triso:itemComponent id="_45d18b9c-e650-4b65-98cb-486fdbc6d26a" name="Hypertension Stage 1 Drug">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"ACE-I","ARB"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="tStage1DrugChoice" label="tStage1DrugChoice">
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"ACE-I","ARB","Other"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tPatientData" label="Hypertension Decisions.tPatientData">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_df32fb42-1969-46e3-97a4-06ee07fa147a" name="tPatientData" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tPatientData"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_0518c9cf-c5de-4ba3-86c4-3b152dc8687c" name="Patient Name">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_42670bbc-dcc9-4a4c-a702-58a58fbca9db" name="Demographics">
+                        <triso:typeRef>Hypertension_Decisions.tDemographics</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_02eec27d-9e5c-4576-b9e1-a9fe746c10e1" name="Health Conditions">
+                        <triso:typeRef>Hypertension_Decisions.tHealthConditions</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_030c6b2a-9976-478e-b1f9-43cb7cb27782" name="Medication Tolerances">
+                        <triso:typeRef>Hypertension_Decisions.tMedicationTolerances</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_b55b41f7-e66d-4a01-84ac-83b2c9faf063" name="Prescriptions">
+                        <triso:itemComponent id="_0f8d1171-0765-4f13-93cd-ee0077c99e5e" name="ACE-I">
+                            <triso:typeRef>Hypertension_Decisions.tPrescriptions</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_dd27a7ad-065a-4be9-9f5d-f5a2f7d76d90" name="ARB">
+                            <triso:typeRef>tPrescriptions</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_d2cbf4bd-e1d4-4f53-9de7-7f3ea861cbe3" name="Vital Signs and Measurements" isCollection="true">
+                        <triso:typeRef>Hypertension_Decisions.tVitalSignsMeasurements</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tSex" label="Hypertension Decisions.tSex">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_63a367db-9d9d-4f7a-a466-dd0949f8e94d" name="tSex" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tSex"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Male","Female","Undetermined","Declined to State"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tEthnicity" label="Hypertension Decisions.tEthnicity">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_4d705d08-03bb-40d0-a51f-ffdcf00d05b4" name="tEthnicity" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tEthnicity"/>
+                    </semantic:extensionElements>
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"African","Asian","Caucasian","Hispanic","Native American","Pacific Islander","Decline to State"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tDemographics" label="Hypertension Decisions.tDemographics">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_22ca0822-2f64-4a4f-8bad-19196be735bc" name="tDemographics" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tDemographics"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_8ecf1a60-f36d-4ff4-9a98-950358b8c893" name="Age">
+                        <triso:typeRef>yearMonthDuration</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_2f424476-dd59-491e-8193-e5bf6241b34d" name="Date Of Birth">
+                        <triso:typeRef>date</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_f79450d7-7a13-48af-a1fc-dd9bfd010247" name="Sex">
+                        <triso:typeRef>Hypertension_Decisions.tSex</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_ca9b9c29-b5bf-428e-b77e-1b8b6789aa0d" name="Ethnicity">
+                        <triso:typeRef>Hypertension_Decisions.tEthnicity</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_0915371a-5fb5-46c3-9135-a502fa03b0a0" name="State of Residence">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tBloodPressureStage" label="Hypertension Decisions.tBloodPressureStage" isCollection="false">
+                    <triso:typeRef>string</triso:typeRef>
+                    <triso:allowedValues triso:constraintsType="enumeration">
+                        <triso:text>"Hypertensive Emergency","Stage 2 High","Stage 1 High","Elevated","Normal"</triso:text>
+                    </triso:allowedValues>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tHealthConditions" label="Hypertension Decisions.tHealthConditions">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_8cb25d6c-b455-4f0b-ba32-0a88eba1c4f7" name="tHealthConditions" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tHealthConditions"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_792abbe6-49c3-450b-b5c0-fa793b4cc8ae" name="Chronic Kidney Disease">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_2d9f46c7-a2de-44fd-9a1d-c80fbb4e9387" name="Diabetes">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_0c9686e5-b199-4c03-af92-4e34a4f695c1" name="Heart Failure">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_d38bf2f0-c114-4e6e-adff-ba76263609d5" name="Hypertension">
+                        <triso:itemComponent id="_ce2083dd-ad7d-49da-a4ed-fd819a385e57" name="Condition">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_ac92e3cb-a338-4406-93dd-8e2d8f305af3" name="Stage">
+                            <triso:typeRef>Hypertension_Decisions.tBloodPressureStage</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_0f72f4e6-8601-4173-8fc4-69b43e5fb054" name="Compelling Indications">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_c7602440-b00d-48c3-8c76-9612d403b04b" name="Goal Met">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_6a82ac4e-109a-4353-bde4-d6da4f3a3527" name="Vascular Disease">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_0daf4d9a-698b-4948-ba14-442a28ab06a6" name="Pregnancy">
+                        <triso:itemComponent id="_d2df32c5-419f-4028-a9b1-88f27a7c4862" name="Currently Pregnant">
+                            <triso:typeRef>boolean</triso:typeRef>
+                        </triso:itemComponent>
+                        <triso:itemComponent id="_e2ba338b-7ebe-453e-b2c1-f2a5ca8758b8" name="Previous Pregnancies">
+                            <triso:typeRef>number</triso:typeRef>
+                        </triso:itemComponent>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tMedicationTolerances" label="Hypertension Decisions.tMedicationTolerances">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_8fd38f7d-32a0-4087-a3ec-93cac240d581" name="tMedicationTolerances" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tMedicationTolerances"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_5ed6c28e-5b1b-40d5-a0d1-a6410b92b39b" name="Anithypertensive">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tPrescriptions" label="Hypertension Decisions.tPrescriptions">
+                    <triso:itemComponent id="_7dd65c3a-df60-41a5-a190-aa517710162c" name="Name">
+                        <triso:typeRef>string</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_a4a17bb7-6734-4a69-be09-47a024222639" name="Active">
+                        <triso:typeRef>boolean</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_cef9e3fa-93f3-4f10-a739-3ed19f182eec" name="Previous">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tBlood_Pressure" label="Hypertension Decisions.tBlood_Pressure">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_e6d3c663-8c6f-4ae4-9f72-348bd9f5d146" name="tBlood_Pressure" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tBlood_Pressure"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_b83d918a-26c2-4d6c-a21a-9257c4c27bbe" name="Systolic">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[60..250]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_543ab423-08a5-4392-bf07-79949e9237b2" name="Diastolic">
+                        <triso:typeRef>number</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="expression">
+                            <triso:text>[20..150]</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tVitalSignsMeasurements" label="Hypertension Decisions.tVitalSignsMeasurements">
+                    <semantic:extensionElements>
+                        <triso:semanticLink id="_f8cdb15a-42da-4658-9db3-6d313c81487a" name="tVitalSignsMeasurements" uri="http://www.trisotech.com/definitions/_28c8ed1b-6202-4343-8376-f08f5b1e1d74#tVitalSignsMeasurements"/>
+                    </semantic:extensionElements>
+                    <triso:itemComponent id="_f00bbc0b-1bbe-47eb-a803-8c19b599e179" name="Blood Pressure">
+                        <triso:typeRef>Hypertension_Decisions.tBlood_Pressure</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_267a2d72-ad73-444d-bb9c-a9e9b03583d6" name="Temperature">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_3a761a10-87ad-4ff6-a698-7f85241b19fb" name="Heart Rate">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_2e4052ff-adcf-4c54-8c0e-9e6df02f0654" name="Weight">
+                        <triso:typeRef>number</triso:typeRef>
+                    </triso:itemComponent>
+                    <triso:itemComponent id="_a5378c4a-0eac-433e-84e0-4da39bcf08f0" name="Date of Collection">
+                        <triso:typeRef>dateTime</triso:typeRef>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+                <triso:itemDefinition name="Hypertension_Decisions.tPreferences" label="Hypertension Decisions.tPreferences">
+                    <triso:itemComponent id="_b9ce485d-3ca8-4574-a70f-40804b599493" name="Hypertension Stage 1 Drug">
+                        <triso:typeRef>string</triso:typeRef>
+                        <triso:allowedValues triso:constraintsType="enumeration">
+                            <triso:text>"ACE-I","ARB"</triso:text>
+                        </triso:allowedValues>
+                    </triso:itemComponent>
+                </triso:itemDefinition>
+            </triso:itemDefinitions>
+        </semantic:extensionElements>
+        <semantic:source>_28c8ed1b-6202-4343-8376-f08f5b1e1d74</semantic:source>
+        <semantic:target>_28c8ed1b-6202-4343-8376-f08f5b1e1d74</semantic:target>
+    </semantic:relationship>
+</semantic:definitions>
